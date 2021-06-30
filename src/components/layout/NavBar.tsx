@@ -29,7 +29,7 @@ const NavSection = styled.div`
     margin-left: 0.5rem;
   }
   &:not(:last-child) {
-    margin-right: 0.5rem;
+    margin-rightW: 0.5rem;
   }
 `;
 

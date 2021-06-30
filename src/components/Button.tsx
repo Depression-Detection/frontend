@@ -88,7 +88,7 @@ export const Button = styled.button<ButtonProps>`
     if (p.variant && p.fill !== 'outline') {
       return `
       background-color: var(--${p.variant});
-      color: ${p.theme.color.onBg};
+      
       border-color: rgba(0,0,0,0.05);
         box-shadow: 0 2px 10px 0 var(--${p.variant}-shadow);
       &:hover, &:active, &:focus {
@@ -101,7 +101,7 @@ export const Button = styled.button<ButtonProps>`
       // __todo
       return `
       background-color: var(--${p.variant});
-      color: ${p.theme.color.onBg};
+      
       border-color: rgba(0,0,0,0.05);
         ${
           !p.shadowless &&

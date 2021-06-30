@@ -5,35 +5,63 @@ import styled from 'styled-components/macro';
 const Hero = styled.div`
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background: var(--primary);
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   h1 {
     font-size: 3rem;
-    color: var(--text-on-bg);
+    color: white;
   }
   p {
-    color: var(--text-on-bg);
+    color: white;
+  }
+  a {
+    color: white;
   }
 
   position: relative;
-  & > * {
+  & {
     position: relative;
     z-index: 1;
+    overflow: hidden;
+    background: linear-gradient(45deg, #013f28, #1c0c64);
   }
-`;
 
-const WorldMap = styled(Img)`
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-  opacity: 0.2;
+  
+
+  &:before {
+    background: #400414;
+    box-shadow: 0 0 540px 164px #400414;
+    z-index:2;
+    top: -100%;
+    left: -75%;
+    opacity: .7;
+  }
+
+  &:after {
+    background: #400414;
+    box-shadow: 0 0 540px 164px white;
+    z-index:2;
+    bottom: -100%;
+    right: -90%;
+    opacity: .4;
+  }
+
+  &:after {
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+  }
+
+  &:before {
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+  }
 `;
 
 export const HeroBlue: React.FC<{
@@ -43,7 +71,6 @@ export const HeroBlue: React.FC<{
   return (
     <Hero className={className}>
       {children}
-      <WorldMap src="/illustrations/world_map_dots.svg" alt="World map" />
     </Hero>
   );
 };

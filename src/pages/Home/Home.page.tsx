@@ -30,14 +30,13 @@ const PageContainer = styled(Page)`
 export const HomePage = () => {
   return (
     <PageContainer>
-      <Helmet>
-        <title>{'head title'}</title>
-      </Helmet>
+      {/* <Helmet>
+        <title>head title</title>
+      </Helmet> */}
       <Hero>
         <Content contentCenter style={{ position: 'relative', zIndex: 100 }}>
-          <h1>{'title'}</h1>
-          <p>{'description'}</p>
-          <tr>We are currently under development</tr>
+          <h1>{'Omicron'}</h1>
+          <p>We are currently under development</p>
           <a href="https://twitter.com/omicron_life">Click here for Updates</a>
         </Content>
         {/* <Spacer />
