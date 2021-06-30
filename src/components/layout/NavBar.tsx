@@ -10,15 +10,16 @@ const NLink = styled(NavLink)`
   height: 100%;
   display: flex;
   align-items: center;
-  color: var(--text-primary);
+  color: white;
   text-decoration: none;
   align-items: center;
-  font-weight: 600;
+  
   border: none;
   outline: none;
   background: transparent;
   min-width: 50px;
   justify-content: center;
+  font-family: Trebuchet MS;
 `;
 
 const NavSection = styled.div`
@@ -37,10 +38,10 @@ const NavContainerOuter = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 85vw;
   height: auto;
   z-index: 1000;
-  background: #1a1613;
+  background: #1a161300;
   display: flex;
   flex-wrap: wrap;
   @media screen and (max-width: 1100px) {
@@ -71,11 +72,20 @@ export const NavBar: React.FC<NavBarType> = (props) => {
           <BrowserRouter>
             <NLink to="/" style={{ marginLeft: '-0.5rem' }}>
               <Logo
-                src="fixedlogo.svg"
-                height="70px" 
-                width="300px"
+                src="omicronwhitesprite.svg"
+                height="35px" 
+                width="35px"
                 alt="Omicron Logo"
               />
+            </NLink>
+            <NLink to="/services" style={{ marginLeft: '1rem' }}>
+              Services
+            </NLink>
+            <NLink to="/blog" style={{ marginLeft: '1rem' }}>
+              Blog
+            </NLink>
+            <NLink to="/about" style={{ marginLeft: '1rem' }}>
+              About
             </NLink>
           </BrowserRouter>
         </NavSection>

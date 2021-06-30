@@ -7,6 +7,7 @@ import { Page } from 'src/components/layout/Page';
 import styled from 'styled-components/macro';
 // import { SearchAddressBar } from 'src/components/SearchAddressBar/SearchAddressBar';
 import { Helmet } from 'react-helmet-async';
+import { NavBar } from 'src/components/layout/NavBar';
 // import { Spacer } from 'src/components/layout/Spacer';
 // import { CoinEarnings } from './CoinEarnings';
 // import { WhyFlexpool } from './WhyFlexpool';
@@ -34,6 +35,9 @@ export const HomePage = () => {
         <title>head title</title>
       </Helmet> */}
       <Hero>
+        <React.Suspense fallback={<React.Fragment />}>
+          <NavBar />
+        </React.Suspense>
         <Content contentCenter style={{ position: 'relative', zIndex: 100 }}>
           <h1>{'Omicron'}</h1>
           <p>We are currently under development</p>
