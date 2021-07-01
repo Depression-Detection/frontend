@@ -1,9 +1,16 @@
 import { Content } from 'src/components/layout/Content';
 import styled from "styled-components";
 import { Link, NavLink, useLocation, BrowserRouter  } from 'react-router-dom';
+import { Img } from '../Img';
 
-const Logo = styled.img`
+const Logo = styled(Img)`
+  height: 29px;
+  fill: var(--text-primary);
+`;
 
+const LogoMobile = styled(Img)`
+  height: 25px;
+  fill: var(--text-primary);
 `;
 
 const NLink = styled(NavLink)`
@@ -50,6 +57,32 @@ const NavContainerOuter = styled.div`
   border-bottom: 1px solid #1a1613);
 `;
 
+const MobileNavContainerOuter = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 85vw;
+  height: auto;
+  z-index: 1000;
+  background: #1a161300;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
+  border-bottom: 1px solid #1a1613);
+`;
+
+const ContainerMobile = styled(MobileNavContainerOuter)`
+  display: none;
+  @media screen and (max-width: 1100px) {
+    display: flex;
+  }
+  img {
+    height: 25px;
+  }
+`;
+
 export type NavBarType = {};
 
 const NavContainer = styled(Content)`
@@ -66,18 +99,42 @@ const FixedMargin = styled.div`
 
 export const NavBar: React.FC<NavBarType> = (props) => {
   return (
-    <NavContainerOuter>
-      <NavContainer>
-        <NavSection>
-          <BrowserRouter>
-            <NLink to="/" style={{ marginLeft: '-0.5rem' }}>
-              <Logo
+    <>
+      <NavContainerOuter>
+        <NavContainer>
+          <NavSection>
+            <BrowserRouter>
+              <NLink to="/" style={{ marginLeft: '-0.5rem' }}>
+                <Logo
+                  src="omicronwhitesprite.svg"
+                  alt="Omicron Logo"
+                />
+              </NLink>
+              <NLink to="/services" style={{ marginLeft: '1rem' }}>
+                Services
+              </NLink>
+              <NLink to="/blog" style={{ marginLeft: '1rem' }}>
+                Blog
+              </NLink>
+              <NLink to="/about" style={{ marginLeft: '1rem' }}>
+                About
+              </NLink>
+            </BrowserRouter>
+          </NavSection>
+        </NavContainer>
+      </NavContainerOuter>
+
+      <ContainerMobile>
+        <NavContainer>
+          <NLink to='/' aria-label="Home page" style={{ marginLeft: '-1rem' }}>
+            <LogoMobile
+                height="30px"
+                width="100px"
                 src="omicronwhitesprite.svg"
-                height="35px" 
-                width="35px"
                 alt="Omicron Logo"
               />
-            </NLink>
+          </NLink>
+          <NavSection>
             <NLink to="/services" style={{ marginLeft: '1rem' }}>
               Services
             </NLink>
@@ -87,9 +144,9 @@ export const NavBar: React.FC<NavBarType> = (props) => {
             <NLink to="/about" style={{ marginLeft: '1rem' }}>
               About
             </NLink>
-          </BrowserRouter>
-        </NavSection>
-      </NavContainer>
-    </NavContainerOuter>
+          </NavSection>
+        </NavContainer>
+      </ContainerMobile>
+    </>
   );
 }
