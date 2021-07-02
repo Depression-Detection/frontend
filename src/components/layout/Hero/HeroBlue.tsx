@@ -25,15 +25,12 @@ const Hero = styled.div`
   & {
     position: relative;
     z-index: 1;
-    overflow: hidden;
     background: linear-gradient(45deg, #013f28, #1c0c64);
   }
 
-  
-
   &:before {
     background: #400414;
-    box-shadow: 0 0 540px 164px #400414;
+    box-shadow: 0 0 540px 164px rgb(64,4,20, .7);
     z-index:2;
     top: -100%;
     left: -75%;
@@ -41,8 +38,8 @@ const Hero = styled.div`
   }
 
   &:after {
-    background: #400414;
-    box-shadow: 0 0 540px 164px white;
+    background: rgb(0,0,0,0);
+    // box-shadow: 0 0 540px 164px white;
     z-index:2;
     bottom: -100%;
     right: -90%;
