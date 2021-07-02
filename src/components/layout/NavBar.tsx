@@ -47,7 +47,7 @@ const NavContainerOuter = styled.div`
   left: 0;
   width: 85vw;
   height: auto;
-  z-index: 1000;
+  z-index: 10;
   background: #1a161300;
   display: flex;
   flex-wrap: wrap;
@@ -63,7 +63,7 @@ const MobileNavContainerOuter = styled.div`
   left: 0;
   width: 85vw;
   height: auto;
-  z-index: 1000;
+  z-index: 10;
   background: #1a161300;
   display: flex;
   flex-wrap: wrap;
@@ -103,20 +103,23 @@ export const NavBar: React.FC<NavBarType> = (props) => {
       <NavContainerOuter>
         <NavContainer>
           <NavSection>
-            <BrowserRouter>
+            <BrowserRouter forceRefresh>
               <NLink to="/" style={{ marginLeft: '-0.5rem' }}>
                 <Logo
                   src="omicronwhitesprite.svg"
                   alt="Omicron Logo"
                 />
               </NLink>
-              <NLink to="/services" style={{ marginLeft: '1rem' }}>
+              <NLink to="/services" style={{ marginLeft: '2rem' }}>
                 Services
               </NLink>
-              <NLink to="/blog" style={{ marginLeft: '1rem' }}>
+              <NLink to="/help-us" style={{ marginLeft: '2rem' }}>
+              Help us
+              </NLink>
+              <NLink to="/blog" style={{ marginLeft: '2rem' }}>
                 Blog
               </NLink>
-              <NLink to="/about" style={{ marginLeft: '1rem' }}>
+              <NLink to="/about" style={{ marginLeft: '2rem' }}>
                 About
               </NLink>
             </BrowserRouter>
@@ -137,6 +140,9 @@ export const NavBar: React.FC<NavBarType> = (props) => {
           <NavSection>
             <NLink to="/services" style={{ marginLeft: '1rem' }}>
               Services
+            </NLink>
+            <NLink to="/help-us" style={{ marginLeft: '1rem' }}>
+              Help us
             </NLink>
             <NLink to="/blog" style={{ marginLeft: '1rem' }}>
               Blog

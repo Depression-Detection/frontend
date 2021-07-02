@@ -1,6 +1,5 @@
-  
 import styled from 'styled-components/macro';
-export {}
+
 export const Content = styled.div<{
   contentCenter?: boolean;
   padding?: boolean;
@@ -10,8 +9,8 @@ export const Content = styled.div<{
   width: 100%;
   margin: 0 auto;
   max-width: 1200px;
-  // padding-left: 1rem;
-  // padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   ${(p) =>
     p.contentCenter &&
     `

@@ -1,13 +1,8 @@
 import { Content } from 'src/components/layout/Content';
 import { HeroBlue } from 'src/components/layout/Hero/HeroBlue';
 import { Page } from 'src/components/layout/Page';
-
-import { NewsSection } from './components/News/News.section';
-import { WhyOmicron } from './components/WhyOmicron/WhyOmicron.section';
-import { WhatWeDoSection } from './components/WhatWeDo/WhatWeDo.section';
-
 import styled from 'styled-components/macro';
-import { Spacer } from 'src/components/layout/Spacer';
+
 import { Helmet } from 'react-helmet-async';
 import React from 'react';
 
@@ -26,7 +21,7 @@ const PageContainer = styled(Page)`
   background: var(--bg-secondary);
 `;
 
-export const HomePage = () => {
+export const HelpPage = () => {
   return (
     <PageContainer>
       {/* <Helmet>
@@ -34,20 +29,20 @@ export const HomePage = () => {
       </Helmet> */}
       <Hero>
         <Content contentCenter style={{ position: 'center', zIndex: 100 }}>
-          <h1>{'Omicron'}</h1>
-          <p>We are currently under development</p>
-          <a href="https://twitter.com/omicron_life">Click here for Updates</a>
+          <h1>{'How to help'}</h1>
+          <p>We are currently in need of help</p>
+          <a href="https://twitter.com/omicron_life">Click here to help</a>
         </Content>
+        {/* <Spacer />
+        <CoinEarnings />
         <Spacer />
-        {/* <CoinEarnings /> */}
-        <Spacer />
-        <NewsSection />
+        <NewsSection /> */}
       </Hero>
-      <WhatWeDoSection />
-      <WhyOmicron />
-      {/* <GetStartedSection /> */}
+      {/* <CoinsWeMineSection />
+      <WhyFlexpool />
+      <GetStartedSection /> */}
     </PageContainer>
   );
 };
 
-export default HomePage;
+export default HelpPage;

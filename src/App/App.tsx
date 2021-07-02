@@ -14,6 +14,10 @@ import { PageLoader } from 'src/components/layout/Page';
 import CookieConsent from 'src/components/CookieConsent';
 
 const HomePage = React.lazy(() => import('../pages/Home/Home.page'));
+const ServicesPage = React.lazy(() => import('../pages/Services/Services.page'));
+const HelpPage = React.lazy(() => import('../pages/Help/Help.page'));
+const BlogPage = React.lazy(() => import('../pages/Blog/Blog.page'));
+const AboutPage = React.lazy(() => import('../pages/About/About.page'));
 
 const AppContent = () => {
   const location = useLocation<{ noscroll?: boolean } | null>();
@@ -52,27 +56,10 @@ const AppContent = () => {
       </React.Suspense>
       <React.Suspense fallback={<PageLoader />}>
         <Switch>
-          {/* <Route exact component={ApiDocsPage} path="/docs/api" />
-          <Route
-            exact
-            component={OpenDataReportsPage}
-            path="/open-data-reports"
-          />
-          <Route
-            exact
-            path="/business-development"
-            component={BusinessDevelopmentPage}
-          />
-          <Route exact path="/partners" component={PartnersPage} />
-          <Route component={GetStartedPage} path="/get-started" />
-          <Route exact component={StatisticsPage} path="/statistics" />
-          <Route exact component={FaqPage} path="/faq" />
-          <Route exact component={MinersPage} path="/miners" />
-          <Route component={MinerDashboardPage} path="/miner/:coin/:address" />
-          <Route exact component={BlocksPage} path="/blocks" />
-          <Route exact component={SupportPage} path="/support" />
-          <Route exact component={BrandAssetsPage} path="/brand-assets" />
-          <Route exact component={ContactUsPage} path="/contact" /> */}
+          <Route exact component={ServicesPage} path="/services" />
+          <Route exact component={HelpPage} path="/help-us" />
+          <Route exact component={BlogPage} path="/blog" />
+          <Route exact component={AboutPage} path="/about" />
           <Route exact component={HomePage} path="/" />
           {/* <Route path="/not-found" component={NotFoundPage} /> */}
           <Redirect to="/" />
