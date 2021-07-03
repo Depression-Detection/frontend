@@ -2,7 +2,7 @@ import styled from 'styled-components/macro';
 
 export const ItemWrapper = styled.a`
   min-height: 120px;
-  padding: 2rem;
+  padding: 1.5rem;
   width: 1px;
   flex-grow: 1;
   display: flex;
@@ -19,7 +19,7 @@ export const ItemWrapper = styled.a`
     &:hover {
       text-decoration: none;
       margin: -8px;
-      padding: 40px;
+      padding: 30px;
       z-index: 10;
       box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
       background-color: rgb(255, 255, 255, .2);
@@ -75,7 +75,7 @@ export const Wrapper = styled.div`
 `;
 export const WrapperInner = styled.div`
   position: absolute !important;
-  top: -4rem;
+  top: -5.5rem;
   width: calc(100% - 2rem);
   display: flex;
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.06);
