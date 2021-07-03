@@ -9,8 +9,8 @@ import {
     return (
       <Wrapper>
         <Content contentCenter>
-          <h2>{('section.title')}</h2>
-          <p>{('section.description')}</p>
+          <h2>{('Title')}</h2>
+          <p>{('Description')}</p>
         </Content>
       </Wrapper>
     );

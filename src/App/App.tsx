@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.png';
 import './App.css';
 import { NavBar } from 'src/components/layout/NavBar';
+import { FooterSection } from 'src/sections/Footer.section';
 import {
   BrowserRouter as Router,
   Switch,
@@ -67,8 +68,7 @@ const AppContent = () => {
         <CookieConsent></CookieConsent>
       </React.Suspense>
       <React.Suspense fallback={<React.Fragment />}>
-        {/** __TODO footer loader */}
-        {/* <FooterSection /> */}
+        <FooterSection />
       </React.Suspense>
     </>
   );
