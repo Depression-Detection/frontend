@@ -55,8 +55,7 @@ git push -u origin buxfix
 ```
 5. Switch the to master branch and push to GitHub
 ```
-git checkout main
-git push origin main
+git push origin new-branch
 ```
 6. Finally open the provided link and create merge request
 
