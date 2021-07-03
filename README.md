@@ -36,6 +36,14 @@ git checkout -b new-branch
 ```
 
 2. Make any changes you want to make
+  To add specific files:
+  ```
+  git add <files>
+  ```
+  To add all changes:
+  ```
+  git add -A
+  ```
 
 3. Commit your changes to the Branch
 ```
