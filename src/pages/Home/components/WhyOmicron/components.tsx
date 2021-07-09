@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
 import { Img } from 'src/components/Img';
 export const Wrapper = styled.div`
-  background: var(--bg-primary);
+  background: white;
   border-top: 1px solid var(--border-color);
 `;
 export const Title = styled.h2`

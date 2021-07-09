@@ -113,8 +113,8 @@ export const NavBar: React.FC<NavBarType> = (props) => {
               <NLink to="/services" style={{ marginLeft: '2rem' }}>
                 Services
               </NLink>
-              <NLink to="/help-us" style={{ marginLeft: '2rem' }}>
-              Help us
+              <NLink to="/help" style={{ marginLeft: '2rem' }}>
+              Help
               </NLink>
               <NLink to="/blog" style={{ marginLeft: '2rem' }}>
                 Blog
@@ -141,8 +141,8 @@ export const NavBar: React.FC<NavBarType> = (props) => {
             <NLink to="/services" style={{ marginLeft: '1rem' }}>
               Services
             </NLink>
-            <NLink to="/help-us" style={{ marginLeft: '1rem' }}>
-              Help us
+            <NLink to="/help" style={{ marginLeft: '1rem' }}>
+              Help
             </NLink>
             <NLink to="/blog" style={{ marginLeft: '1rem' }}>
               Blog
