@@ -26,7 +26,7 @@ const ClearLink = styled(Link) `
 `;
 
 const Footer = styled.footer`
-  background: #white;
+  background: white;
   padding-top: 5rem;
   // padding-bottom: 5rem;
   color: var(--text-secondary);
