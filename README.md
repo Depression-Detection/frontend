@@ -51,7 +51,7 @@ git commit -m "message"
 ```
 4. Push changes to remote respository (your frontend file)
 ```
-git push -u origin buxfix
+git push --set-upstream origin new-branch
 ```
 5. Switch the to master branch and push to GitHub
 ```
