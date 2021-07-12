@@ -1,46 +1,41 @@
+import { Wrapper, ClearLink, Image, ItemsContainer, Item, Title, Hero, PageContainer, NavBlock } from './components';
 import { Content } from 'src/components/layout/Content';
-import { HeroBlue } from 'src/components/layout/Hero/HeroBlue';
-import { Page } from 'src/components/layout/Page';
+import { Spacer } from 'src/components/layout/Spacer';
 import styled from 'styled-components/macro';
-
 import { Helmet } from 'react-helmet-async';
 import React from 'react';
-
-const Hero = styled(HeroBlue)`
-  min-height: 40vh;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  position: relative;
-  @media screen and (max-width: 800px) {
-    margin-bottom: 0;
-    padding-bottom: 3rem;
-  }
-`;
-
-const PageContainer = styled(Page)`
-  background: var(--bg-secondary);
-`;
 
 export const ServicesPage = () => {
   return (
     <PageContainer>
-      {/* <Helmet>
-        <title>head title</title>
-      </Helmet> */}
-      <Hero>
-        <Content contentCenter style={{ position: 'center', zIndex: 100 }}>
-          <h1>{'Our Services'}</h1>
-          <p>Services</p>
-          <a href="https://twitter.com/omicron_life">Click here to learn more about our services</a>
-        </Content>
-        {/* <Spacer />
-        <CoinEarnings />
-        <Spacer />
-        <NewsSection /> */}
-      </Hero>
-      {/* <CoinsWeMineSection />
-      <WhyFlexpool />
-      <GetStartedSection /> */}
+      <NavBlock></NavBlock>
+      <Content padding>
+        <Spacer size="xl" />
+        <Title>{('Our Services')}</Title>
+        <ItemsContainer>
+          <Item>
+            <Image
+              height="400"
+              width="400"
+              src="/illustrations/showcaseimg_1.svg"
+              alt={('Mental Health Showcase Image')}
+            />
+            <tr>{('Mental Health Monitoring on Social Media')}</tr>
+            <ClearLink to="/services/mental-health-monitoring-on-social-media" >View more</ClearLink>
+          </Item>
+          {/* <Item>
+            <Image
+              height="400"
+              width="400"
+              src="/illustrations/showcaseimg_1.svg"
+              alt={('Img 1')}
+            />
+            <tr>{('Header 1')}</tr>
+            <a href="https://twitter.com/omicron_life">Click here for Updates</a>
+          </Item> */}
+        </ItemsContainer>
+        <Spacer size="xl" />
+      </Content>
     </PageContainer>
   );
 };

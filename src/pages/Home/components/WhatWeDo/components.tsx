@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro';
 
 export const Wrapper = styled.div`
-  padding-top: 9rem;
-  padding-bottom: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
   background: #151519;
   
   

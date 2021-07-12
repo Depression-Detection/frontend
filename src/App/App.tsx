@@ -19,6 +19,7 @@ const ServicesPage = React.lazy(() => import('../pages/Services/Services.page'))
 const HelpPage = React.lazy(() => import('../pages/Help/Help.page'));
 const BlogPage = React.lazy(() => import('../pages/Blog/Blog.page'));
 const AboutPage = React.lazy(() => import('../pages/About/About.page'));
+const Service1 = React.lazy(() => import('../pages/Services/ServicePages/Service1.page'));
 
 const AppContent = () => {
   const location = useLocation<{ noscroll?: boolean } | null>();
@@ -62,6 +63,8 @@ const AppContent = () => {
           <Route exact component={BlogPage} path="/blog" />
           <Route exact component={AboutPage} path="/about" />
           <Route exact component={HomePage} path="/" />
+          {/* service pages */}
+          <Route exact component={Service1} path="/services/mental-health-monitoring-on-social-media" />
           {/* <Route path="/not-found" component={NotFoundPage} /> */}
           <Redirect to="/" />
         </Switch>

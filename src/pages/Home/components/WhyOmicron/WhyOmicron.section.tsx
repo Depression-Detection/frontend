@@ -17,7 +17,7 @@ export const WhyOmicron = () => {
               alt={('Mental Health Showcase Image')}
             />
             <tr>{('Mental Health Monitoring on Social Media')}</tr>
-            <ClearLink to="/services" >View more</ClearLink>
+            <ClearLink to="/services/mental-health-monitoring-on-social-media" >View more</ClearLink>
           </Item>
           {/* <Item>
             <Image

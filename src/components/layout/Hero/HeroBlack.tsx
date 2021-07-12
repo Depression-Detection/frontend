@@ -9,8 +9,7 @@ const Hero = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // overflow: hidden;
-
+  overflow: hidden;
   h1 {
     font-size: 3rem;
     color: white;
@@ -26,25 +25,16 @@ const Hero = styled.div`
   & {
     position: relative;
     z-index: 1;
-    background: linear-gradient(45deg, #013f28, #1c0c64);
+    background: black
   }
 
   &:before {
-    background: #400414;
-    box-shadow: 0 0 540px 164px rgb(64,4,20, .7);
-    z-index:2;
-    top: -100%;
-    left: -75%;
-    opacity: .7;
-  }
-
-  &:after {
-    background: rgb(0,0,0,0);
-    // box-shadow: 0 0 540px 164px white;
+    
+    box-shadow: 0 0 540px 164px rgb(255,255,255, .3);
     z-index:2;
     bottom: -100%;
-    right: -90%;
-    opacity: .4;
+    left: -75%;
+    opacity: .7;
   }
 
   &:after {
@@ -62,7 +52,7 @@ const Hero = styled.div`
   }
 `;
 
-export const HeroBlue: React.FC<{
+export const HeroBlack: React.FC<{
   children: React.ReactNode;
   className?: string;
 }> = ({ children, className }) => {

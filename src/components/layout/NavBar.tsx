@@ -42,7 +42,7 @@ const NavSection = styled.div`
 `;
 
 const NavContainerOuter = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 85vw;
@@ -58,7 +58,7 @@ const NavContainerOuter = styled.div`
 `;
 
 const MobileNavContainerOuter = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 85vw;

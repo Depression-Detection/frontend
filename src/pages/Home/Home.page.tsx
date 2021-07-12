@@ -14,7 +14,7 @@ import React from 'react';
 const Hero = styled(HeroBlue)`
   min-height: 40vh;
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 11rem;
   position: relative;
   @media screen and (max-width: 800px) {
     margin-bottom: 0;
