@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.png';
-import './App.css';
+import './App.scss';
 import { NavBar } from 'src/components/layout/NavBar';
+import { FooterSection } from 'src/sections/Footer.section';
 import {
   BrowserRouter as Router,
   Switch,
@@ -57,7 +58,7 @@ const AppContent = () => {
       <React.Suspense fallback={<PageLoader />}>
         <Switch>
           <Route exact component={ServicesPage} path="/services" />
-          <Route exact component={HelpPage} path="/help-us" />
+          <Route exact component={HelpPage} path="/help" />
           <Route exact component={BlogPage} path="/blog" />
           <Route exact component={AboutPage} path="/about" />
           <Route exact component={HomePage} path="/" />
@@ -67,8 +68,7 @@ const AppContent = () => {
         <CookieConsent></CookieConsent>
       </React.Suspense>
       <React.Suspense fallback={<React.Fragment />}>
-        {/** __TODO footer loader */}
-        {/* <FooterSection /> */}
+        <FooterSection />
       </React.Suspense>
     </>
   );

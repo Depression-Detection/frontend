@@ -8,6 +8,11 @@ export const Wrapper = styled.div`
   
   h2 {
     font-size: 2rem;
+    color: white
+  }
+
+  p {
+    color: white
   }
 `;
 

@@ -1,16 +1,19 @@
 import styled from 'styled-components/macro';
 import { Img } from 'src/components/Img';
+import { Link } from 'react-router-dom';
+
 export const Wrapper = styled.div`
-  background: var(--bg-primary);
+  background: white;
   border-top: 1px solid var(--border-color);
 `;
-export const Title = styled.h2`
-  text-align: center;
-  margin-bottom: 3rem;
+
+export const ClearLink = styled(Link) `
+  text-decoration: none;
+  font-size: .925rem;
 `;
 
 export const Image = styled(Img)`
-  height: 150px;
+  height: 400px;
 `;
 
 export const ItemsContainer = styled.div`
@@ -22,14 +25,35 @@ export const ItemsContainer = styled.div`
 `;
 
 export const Item = styled.div`
+  font-family: Trebuchet MS;
+  
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: fit;
   * {
     text-align: center;
   }
   p {
     color: var(--text-secondary);
+  }
+  tr {
+    color: var(--text-on-bg);
+    border-bottom: 1px solid #ececec;
+    font-size: .925rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    line-height: 35px;
+  }
+  a {
+    color: #77869e;
+    display: block;
+    font-size: .925rem;
+    font-weight: 400;
+    &:hover {
+      color: var(--text-on-bg);
+      text-decoration: none;
+    }
   }
 `;
 

@@ -31,7 +31,8 @@ export const Content = styled.div<{
     `
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 500px) {
+        margin: 0 0;
         padding-top: 4rem;
         padding-bottom: 4rem;
       }
