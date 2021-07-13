@@ -10,7 +10,7 @@ import {
       <Wrapper>
         <Content contentCenter>
           <h2>{('Title')}</h2>
-          <p>{('Description')}</p>
+          <p>{('LGBTQIA+')}</p>
         </Content>
       </Wrapper>
     );
