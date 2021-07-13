@@ -17,6 +17,11 @@ cd frontend
 
 ```
 yarn install
+yarn add @sentry/react
+yarn add react-router-dom
+yarn add react-transition-group
+yarn add react-helmet-async
+yarn add react-icons
 ```
 
 #### Run the development server
