@@ -118,13 +118,13 @@ export const FooterSection = () => {
             <ClearLink to="/about">About Omicron</ClearLink>
             <ClearLink to="/about/timeline">Timeline</ClearLink>
             <ClearLink to="/help-us">Join Us</ClearLink>
-            <ClearLink to="/privacy">Privacy Policy</ClearLink>
+            <ClearLink to="/about/privacy-policy">Privacy Policy</ClearLink>
           </Section>
         </SectionContainer>
         <FooterEnd>
           <FooterCompany>
             <div style={{ display: 'flex', alignItems: 'center'}}>
-            <ClearLink to="/">{'Omicron 2021'}</ClearLink>
+              <ClearLink to="/">{'Omicron 2021'}</ClearLink>
             </div>
           </FooterCompany>
           <SocialIcons>
