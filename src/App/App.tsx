@@ -54,11 +54,10 @@ const AppContent = () => {
 
   return (
     <>
-      {/* <React.Suspense fallback={<React.Fragment />}>
-        
-      </React.Suspense> */}
-      <React.Suspense fallback={<PageLoader />}>
+      <React.Suspense fallback={<React.Fragment />}>
         <NavBar />
+      </React.Suspense>
+      <React.Suspense fallback={<PageLoader />}>
         <Switch>
           <Route exact component={ServicesPage} path="/services" />
           <Route exact component={HelpPage} path="/help" />

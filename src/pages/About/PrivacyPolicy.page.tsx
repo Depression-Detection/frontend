@@ -15,6 +15,7 @@ const Hero = styled(HeroWhite)`
     margin-bottom: 0;
     padding-bottom: 3rem;
   }
+  justify-content: start;
 `;
 
 const PageContainer = styled(Page)`

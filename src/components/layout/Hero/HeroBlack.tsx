@@ -14,6 +14,14 @@ const Hero = styled.div`
     font-size: 3rem;
     color: white;
   }
+  h2 {
+    font-size: 3rem;
+    color: white;
+  }
+  h3 {
+    font-size: 3rem;
+    color: white;
+  }
   p {
     color: white;
   }

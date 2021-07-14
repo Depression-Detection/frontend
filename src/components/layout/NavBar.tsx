@@ -1,6 +1,6 @@
 import { Content } from 'src/components/layout/Content';
 import styled from "styled-components";
-import { Link, NavLink, useLocation, BrowserRouter  } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Img } from '../Img';
 
 export const ClearLink = styled(Link) `
@@ -17,6 +17,7 @@ export const ClearLink = styled(Link) `
   min-width: 50px;
   justify-content: center;
   font-family: Trebuchet MS;
+  mix-blend-mode: difference;
 `;
 
 const Logo = styled(Img)`
@@ -29,22 +30,6 @@ const LogoMobile = styled(Img)`
   fill: var(--text-primary);
 `;
 
-const NLink = styled(NavLink)`
-  height: 100%;
-  display: flex;
-  align-items: center;
-  color: white;
-  text-decoration: none;
-  align-items: center;
-  
-  border: none;
-  outline: none;
-  background: transparent;
-  min-width: 50px;
-  justify-content: center;
-  font-family: Trebuchet MS;
-`;
-
 const NavSection = styled.div`
   display: flex;
   height: 100%;
@@ -53,7 +38,7 @@ const NavSection = styled.div`
     margin-left: 0.5rem;
   }
   &:not(:last-child) {
-    margin-rightW: 0.5rem;
+    margin-right: 0.5rem;
   }
 `;
 
@@ -109,36 +94,30 @@ const NavContainer = styled(Content)`
   align-items: center;
 `;
 
-const FixedMargin = styled.div`
-  height: 70px;
-`;
-
 export const NavBar: React.FC<NavBarType> = (props) => {
   return (
     <>
       <NavContainerOuter>
         <NavContainer>
           <NavSection>
-            <BrowserRouter forceRefresh>
-              <ClearLink to="/" style={{ marginLeft: '-0.5rem' }}>
-                <Logo
-                  src="omicronwhitesprite.svg"
-                  alt="Omicron Logo"
-                />
-              </ClearLink>
-              <ClearLink to="/services" style={{ marginLeft: '2rem' }}>
-                Services
-              </ClearLink>
-              <ClearLink to="/help" style={{ marginLeft: '2rem' }}>
-              Help
-              </ClearLink>
-              <ClearLink to="/blog" style={{ marginLeft: '2rem' }}>
-                Blog
-              </ClearLink>
-              <ClearLink to="/about" style={{ marginLeft: '2rem' }}>
-                About
-              </ClearLink>
-            </BrowserRouter>
+            <ClearLink to="/" style={{ marginLeft: '-0.5rem' }}>
+              <Logo
+                src="omicronwhitesprite.svg"
+                alt="Omicron Logo"
+              />
+            </ClearLink>
+            <ClearLink to="/services" style={{ marginLeft: '2rem' }}>
+              Services
+            </ClearLink>
+            <ClearLink to="/help" style={{ marginLeft: '2rem' }}>
+            Help
+            </ClearLink>
+            <ClearLink to="/blog" style={{ marginLeft: '2rem' }}>
+              Blog
+            </ClearLink>
+            <ClearLink to="/about" style={{ marginLeft: '2rem' }}>
+              About
+            </ClearLink>
           </NavSection>
         </NavContainer>
       </NavContainerOuter>
