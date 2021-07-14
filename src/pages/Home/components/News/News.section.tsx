@@ -58,7 +58,7 @@ import { Content } from 'src/components/layout/Content';
               category={('Make a diffrence')}
               title={('Aid Discovery')}
               action={('Help')}
-              to="/help-us"
+              to="/help"
             />
           </WrapperInner>
         </Content>

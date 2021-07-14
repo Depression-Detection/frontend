@@ -26,8 +26,8 @@ const CookieConsentBaseContainer = styled.div<CookieConsentProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
+  background-color: #151519;
+  color: white;
   width: 100%;
 `;
 

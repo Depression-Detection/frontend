@@ -116,8 +116,8 @@ export const FooterSection = () => {
           <Section>
             <FSectionTitle>{'About'}</FSectionTitle>
             <ClearLink to="/about">About Omicron</ClearLink>
-            <ClearLink to="/about/timeline">Timeline</ClearLink>
-            <ClearLink to="/help-us">Join Us</ClearLink>
+            <ClearLink to="/about">Timeline</ClearLink>
+            <ClearLink to="/help">Join Us</ClearLink>
             <ClearLink to="/about/privacy-policy">Privacy Policy</ClearLink>
           </Section>
         </SectionContainer>
