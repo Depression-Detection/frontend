@@ -3,6 +3,22 @@ import styled from "styled-components";
 import { Link, NavLink, useLocation, BrowserRouter  } from 'react-router-dom';
 import { Img } from '../Img';
 
+export const ClearLink = styled(Link) `
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+
+  border: none;
+  outline: none;
+  background: transparent;
+  min-width: 50px;
+  justify-content: center;
+  font-family: Trebuchet MS;
+`;
+
 const Logo = styled(Img)`
   height: 29px;
   fill: var(--text-primary);
@@ -104,24 +120,24 @@ export const NavBar: React.FC<NavBarType> = (props) => {
         <NavContainer>
           <NavSection>
             <BrowserRouter forceRefresh>
-              <NLink to="/" style={{ marginLeft: '-0.5rem' }}>
+              <ClearLink to="/" style={{ marginLeft: '-0.5rem' }}>
                 <Logo
                   src="omicronwhitesprite.svg"
                   alt="Omicron Logo"
                 />
-              </NLink>
-              <NLink to="/services" style={{ marginLeft: '2rem' }}>
+              </ClearLink>
+              <ClearLink to="/services" style={{ marginLeft: '2rem' }}>
                 Services
-              </NLink>
-              <NLink to="/help" style={{ marginLeft: '2rem' }}>
+              </ClearLink>
+              <ClearLink to="/help" style={{ marginLeft: '2rem' }}>
               Help
-              </NLink>
-              <NLink to="/blog" style={{ marginLeft: '2rem' }}>
+              </ClearLink>
+              <ClearLink to="/blog" style={{ marginLeft: '2rem' }}>
                 Blog
-              </NLink>
-              <NLink to="/about" style={{ marginLeft: '2rem' }}>
+              </ClearLink>
+              <ClearLink to="/about" style={{ marginLeft: '2rem' }}>
                 About
-              </NLink>
+              </ClearLink>
             </BrowserRouter>
           </NavSection>
         </NavContainer>
@@ -129,27 +145,27 @@ export const NavBar: React.FC<NavBarType> = (props) => {
 
       <ContainerMobile>
         <NavContainer>
-          <NLink to='/' aria-label="Home page" style={{ marginLeft: '-1rem' }}>
+          <ClearLink to='/' aria-label="Home page" style={{ marginLeft: '-1rem' }}>
             <LogoMobile
                 height="30px"
                 width="100px"
                 src="omicronwhitesprite.svg"
                 alt="Omicron Logo"
               />
-          </NLink>
+          </ClearLink>
           <NavSection>
-            <NLink to="/services" style={{ marginLeft: '1rem' }}>
+            <ClearLink to="/services" style={{ marginLeft: '1rem' }}>
               Services
-            </NLink>
-            <NLink to="/help" style={{ marginLeft: '1rem' }}>
+            </ClearLink>
+            <ClearLink to="/help" style={{ marginLeft: '1rem' }}>
               Help
-            </NLink>
-            <NLink to="/blog" style={{ marginLeft: '1rem' }}>
+            </ClearLink>
+            <ClearLink to="/blog" style={{ marginLeft: '1rem' }}>
               Blog
-            </NLink>
-            <NLink to="/about" style={{ marginLeft: '1rem' }}>
+            </ClearLink>
+            <ClearLink to="/about" style={{ marginLeft: '1rem' }}>
               About
-            </NLink>
+            </ClearLink>
           </NavSection>
         </NavContainer>
       </ContainerMobile>

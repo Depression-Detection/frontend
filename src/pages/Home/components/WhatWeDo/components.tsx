@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     color: white
   }
 
-  p {
+  a {
     color: white
   }
 `;

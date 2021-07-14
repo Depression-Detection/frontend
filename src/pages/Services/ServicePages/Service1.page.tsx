@@ -13,7 +13,7 @@ export const Image = styled(Img)`
 `;
 
 const Hero = styled(HeroBlack)`
-    min-height: 35rem;
+    min-height: 40rem;
     padding-top: 5rem;
     padding-bottom: 10rem;
     position: relative;

@@ -104,7 +104,7 @@ export const FooterSection = () => {
         <SectionContainer>
           <Section>
             <FSectionTitle>{'Services'}</FSectionTitle>
-            <ClearLink to="/contact">Depression Detection</ClearLink>
+            <ClearLink to="/services/mental-health-monitoring-on-social-media">Depression Detection</ClearLink>
           </Section>
           <Section>
             <FSectionTitle>{'Blog'}</FSectionTitle>
