@@ -109,7 +109,6 @@ export const FooterSection = () => {
           <Section>
             <FSectionTitle>{'Blog'}</FSectionTitle>
             <ClearLink to="/blog/latest" >Latest</ClearLink>
-            <ClearLink to="/blog/milestones">Milestones</ClearLink>
             <ClearLink to="/blog/research">Research</ClearLink>
             <ClearLink to="/blog/announcements">Announcements</ClearLink>
           </Section>
