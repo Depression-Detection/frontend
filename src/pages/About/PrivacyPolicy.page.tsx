@@ -44,12 +44,12 @@ export const AboutPage = () => {
           <p>
             At any time, if you would like for us to gather or delete your data, please contact us at life.omicron@gmail.com.
           </p>
-          <h3>{'Cookie Policy'}</h3>
+          {/* <h3>{'Cookie Policy'}</h3>
           <p>
             Cookies on our website are used to provide security and help us to improve the
             user experience of our website.
-          </p>
-          <h3>{'Data Processing'}</h3>
+          </p> */}
+          <h3>{'Data Usage'}</h3>
           <p>
             All data collected by our social media surveys and forms are analyzed holistically. 
             As such, we do not tie the user's usernames to their data in order to maintain privacy.

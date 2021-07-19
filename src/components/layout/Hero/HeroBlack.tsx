@@ -33,7 +33,7 @@ const Hero = styled.div`
   & {
     position: relative;
     z-index: 1;
-    background: black
+    background: black;
   }
 
   &:before {

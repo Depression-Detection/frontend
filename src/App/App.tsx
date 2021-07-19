@@ -72,7 +72,7 @@ const AppContent = () => {
           {/* <Route path="/not-found" component={NotFoundPage} /> */}
           <Redirect to="/" />
         </Switch>
-        <CookieConsent></CookieConsent>
+        {/* <CookieConsent></CookieConsent> */}
       </React.Suspense>
       <React.Suspense fallback={<React.Fragment />}>
         <FooterSection />

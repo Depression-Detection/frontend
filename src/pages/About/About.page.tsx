@@ -64,7 +64,8 @@ const PageContainer = styled(Page)`
 const WrapperLight = styled.div`
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-image: url("https://cdn.openai.com/research-covers/openai-charter/gradient.jpg");
+  // background-image: url("https://cdn.openai.com/research-covers/openai-charter/gradient.jpg");
+  background: white;
   display: flex;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

@@ -83,17 +83,18 @@ export const AboutPage = () => {
         <TextContainer>
             <Title>{'Mental Health Monitoring on Social Media'}</Title>
             <Subtitle>
-                Information about Mental Health Monitoring on Social Media. Information about Mental Health Monitoring on Social Media. 
-                Information about Mental Health Monitoring on Social Media. Information about Mental Health Monitoring on Social Media. 
-                Information about Mental Health Monitoring on Social Media. Information about Mental Health Monitoring on Social Media. 
-                Information about Mental Health Monitoring on Social Media. Information about Mental Health Monitoring on Social Media.  
+                We're creating a software that can scan the intricacies of users' social media accounts to determine 
+                whether or not they are prone to depression. Our software uses a multimodal approach integrated with 
+                deep learning and natural language processing to analyze the text in social media posts. Once perfected, 
+                this service will be available to everyone for free — and we will ensure to maintain privacy and secure 
+                boundaries.
             </Subtitle>
             <UpdateLog>
                 <DateText>
-                    Last Upated
+                    Last Updated
                 </DateText>
                 <DateText>
-                    July 12, 2021
+                    July 18, 2021
                 </DateText>
             </UpdateLog>
         </TextContainer>
