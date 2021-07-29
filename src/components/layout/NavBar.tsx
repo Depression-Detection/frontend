@@ -118,6 +118,9 @@ export const NavBar: React.FC<NavBarType> = (props) => {
             <ClearLink to="/about" style={{ marginLeft: '2rem' }}>
               About
             </ClearLink>
+            <ClearLink style={{ marginLeft: '2rem' }}>
+              Contact Us
+            </ClearLink>
           </NavSection>
         </NavContainer>
       </NavContainerOuter>
@@ -142,8 +145,11 @@ export const NavBar: React.FC<NavBarType> = (props) => {
             <ClearLink to="/blog" style={{ marginLeft: '1rem' }}>
               Blog
             </ClearLink>
-            <ClearLink to="/about" style={{ marginLeft: '1rem' }}>
+            <ClearLink  to="/about" style={{ marginLeft: '1rem' }}>
               About
+            </ClearLink>
+            <ClearLink style={{ marginLeft: '2rem' }}>
+              Contact Us
             </ClearLink>
           </NavSection>
         </NavContainer>
