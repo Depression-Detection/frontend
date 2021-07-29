@@ -40,7 +40,7 @@ export const HomePage = () => {
         <Content contentCenter style={{ position: 'center', zIndex: 100 }}>
           <h1>{'Omicron'}</h1>
           <p>We are currently under development</p>
-          <a href="https://twitter.com/omicron_life">Click here for Updates</a>
+          <a href="https://twitter.com/omicron_life" target="_blank">Click here for Updates</a>
         </Content>
         <Spacer />
         {/* <CoinEarnings /> */}
