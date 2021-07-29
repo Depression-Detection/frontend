@@ -20,6 +20,10 @@ const Hero = styled(HeroBlue)`
     margin-bottom: 0;
     padding-bottom: 3rem;
   }
+
+  h1{
+    font-family: Georgia, serif;
+  }
 `;
 
 const PageContainer = styled(Page)`
