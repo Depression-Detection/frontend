@@ -108,8 +108,8 @@ export const FooterSection = () => {
           </Section>
           <Section>
             <FSectionTitle>{'Blog'}</FSectionTitle>
-            <ClearLink to="/blog/latest" >Latest</ClearLink>
-            <ClearLink to="/blog/research">Research</ClearLink>
+            <a href={TWITTER_LINK}  target="_blank">Latest</a>
+            <a href="https://forms.gle/BRLPi2uAS6KPF5wg6" target="_blank">Research</a>
             <ClearLink to="/blog/announcements">Announcements</ClearLink>
           </Section>
           <Section>
