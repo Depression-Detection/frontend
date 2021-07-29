@@ -17,7 +17,7 @@ export const BlogPage = () => {
         <Title>{('Our Blog')}</Title>
         <ItemsContainer>
           <Item>
-            <TitleLink href="https://medium.com/">{('Mental Health Monitoring on Social Media')}</TitleLink>
+            <TitleLink href="https://medium.com/"  target="_blank">{('Mental Health Monitoring on Social Media')}</TitleLink>
             <Categories>
               <Date>July 17, 2021</Date>
               <ClearLink to="/blog/research" >Research,</ClearLink>

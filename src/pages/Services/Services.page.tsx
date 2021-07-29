@@ -31,7 +31,7 @@ export const ServicesPage = () => {
               alt={('Img 1')}
             />
             <tr>{('Header 1')}</tr>
-            <a href="https://twitter.com/omicron_life">Click here for Updates</a>
+            <a href="https://twitter.com/omicron_life"  target="_blank">Click here for Updates</a>
           </Item> */}
         </ItemsContainer>
         <Spacer size="xl" />

@@ -31,7 +31,7 @@ export const HelpPage = () => {
         <Content contentCenter style={{ position: 'center', zIndex: 100 }}>
           <h1>{'How to help'}</h1>
           <p>We are currently in need of help</p>
-          <a href="https://twitter.com/omicron_life">Click here to help.</a>
+          <a href="https://twitter.com/omicron_life"  target="_blank">Click here to help.</a>
         </Content>
         {/* <Spacer />
         <CoinEarnings />
