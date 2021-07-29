@@ -30,8 +30,8 @@ export const HelpPage = () => {
       <Hero>
         <Content contentCenter style={{ position: 'center', zIndex: 100 }}>
           <h1>{'How to help'}</h1>
-          <p>We are currently in need of help</p>
-          <a href="https://twitter.com/omicron_life"  target="_blank">Click here to help.</a>
+          <p>We are currently in need of Reddit data for our software</p>
+          <a href="https://twitter.com/omicron_life"  target="_blank">Click here to contribute.</a>
         </Content>
         {/* <Spacer />
         <CoinEarnings />
