@@ -31,7 +31,7 @@ const Hero = styled(HeroBlack)`
   }
   
   h1 {
-    font-family: Georgia, serif;
+    font-family: Verdana, serif;
     font-weight: normal;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -72,7 +72,7 @@ const WrapperLight = styled.div`
   gap: 2rem;
   
   h2 {
-    font-family: Georgia, serif;
+    font-family: Verdana, serif;
     font-weight: normal;
     font-size: 2rem;
     color: #151519;

@@ -16,9 +16,9 @@ import CookieConsent from 'src/components/CookieConsent';
 
 const HomePage = React.lazy(() => import('../pages/Home/Home.page'));
 const ServicesPage = React.lazy(() => import('../pages/Services/Services.page'));
-const HelpPage = React.lazy(() => import('../pages/Help/Help.page'));
 const BlogPage = React.lazy(() => import('../pages/Blog/Blog.page'));
 const AboutPage = React.lazy(() => import('../pages/About/About.page'));
+const ContactPage = React.lazy(() => import('../pages/ContactUs/Contact.page'));
 const Service1 = React.lazy(() => import('../pages/Services/ServicePages/Service1.page'));
 const PrivacyPolicy = React.lazy(() => import('../pages/About/PrivacyPolicy.page'));
 
@@ -61,10 +61,10 @@ const AppContent = () => {
       <NavBar />
         <Switch>
           <Route exact component={ServicesPage} path="/services" />
-          <Route exact component={HelpPage} path="/help" />
           <Route exact component={BlogPage} path="/blog" />
           <Route exact component={AboutPage} path="/about" />
           <Route exact component={HomePage} path="/" />
+          <Route exact component={ContactPage} path="/contact-us" />
           {/* service pages */}
           <Route exact component={Service1} path="/services/mental-health-monitoring-on-social-media" />
           {/* footer pages */}
