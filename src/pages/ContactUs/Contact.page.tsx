@@ -3,20 +3,46 @@ import { Page } from 'src/components/layout/Page';
 import styled from 'styled-components/macro';
 
 const PageContainer = styled(Page)`
-  background: #151519;
+  background: linear-gradient(45deg, #013f28, #1c0c64);;
   align-items: center;
   justify-content: center;
+  padding-top: 200px;
+ 
+  h3{
+    color: white;
+    font-family: Verdana, serif;
+  }
+  form{
+    text-align: center;
+  }
+  input{
+    margin-top: 15px;
+  }
+  textarea{
+    margin-top: 15px;
+  }
 `;
 
 const Title = styled.h1`
   color: white;
+  font-family: Verdana, serif;
 `;
+
 
 export const ContactPage = () => {
   return (
     <>
     <PageContainer>
-      <Title>poon</Title>
+      <Title>Contact Us</Title>
+      <h3>{('Do you have any questions or concerns?')}</h3>
+          <div>
+            <form id="contact-form" method="post" action="">
+              <input  name="name" type="text" placeholder="Enter Your Name" required/><br></br>
+              <input name="email" type="email" placeholder="Enter Your Email" required/><br></br>
+              <textarea  name="message" rows={5} cols={40} placeholder="Enter Your Message"></textarea><br></br>
+              <input type="submit" value="Submit" margin-bottom="10px"></input>
+          </form>
+          </div>
     </PageContainer>
     </>
   );

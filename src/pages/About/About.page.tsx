@@ -144,19 +144,6 @@ export const AboutPage = () => {
           <ClearLink to="/about/privacy-policy">Click here to navigate to our Privacy Policy</ClearLink>
         </Content>
       </WrapperDark>
-      <WrapperLight>
-        <Content contentCenter>
-          <h2>{('Contact Us')}</h2>
-          <h3>{('Do you have any questions or concerns?')}</h3>
-          <div>
-            <form id="contact-form" method="post" action="">
-              <input name="name" type="text" placeholder="Enter Your Name" required/><br></br>
-              <input name="email" type="email" placeholder="Enter Your Email" required/><br></br>
-              <textarea name="message" placeholder="Enter Your Message"></textarea>
-          </form>
-          </div>
-        </Content>
-      </WrapperLight>
     </PageContainer>
     </>
   );
