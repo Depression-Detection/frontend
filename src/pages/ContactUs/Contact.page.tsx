@@ -36,11 +36,11 @@ export const ContactPage = () => {
       <Title>Contact Us</Title>
       <h3>{('Do you have any questions or concerns?')}</h3>
           <div>
-            <form id="contact-form" method="post" action="">
+            <form id="contact-form" method="post" action="https://formspree.io/f/mrgrykgv">
               <input  name="name" type="text" placeholder="Enter Your Name" required/><br></br>
               <input name="email" type="email" placeholder="Enter Your Email" required/><br></br>
               <textarea  name="message" rows={5} cols={40} placeholder="Enter Your Message"></textarea><br></br>
-              <input type="submit" value="Submit" margin-bottom="10px"></input>
+              <input type="submit" value="Send Email" margin-bottom="10px"></input>
           </form>
           </div>
     </PageContainer>
