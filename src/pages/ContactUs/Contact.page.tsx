@@ -16,10 +16,12 @@ const PageContainer = styled(Page)`
     text-align: center;
   }
   input{
-    margin-top: 15px;
+    margin-top: 12px;
+    border-radius: 10px;
   }
   textarea{
-    margin-top: 15px;
+    margin-top: 12px;
+    border-radius: 10px;
   }
 `;
 
@@ -37,10 +39,10 @@ export const ContactPage = () => {
       <h3>{('Do you have any questions or concerns?')}</h3>
           <div>
             <form id="contact-form" method="post" action="https://formspree.io/f/mrgrykgv">
-              <input  name="name" type="text" placeholder="Enter Your Name" required/><br></br>
-              <input name="email" type="email" placeholder="Enter Your Email" required/><br></br>
-              <textarea  name="message" rows={5} cols={40} placeholder="Enter Your Message"></textarea><br></br>
-              <input type="submit" value="Send Email" margin-bottom="10px"></input>
+              <input  name="name" type="text" placeholder=" Enter Your Name" required/><br></br>
+              <input name="email" type="email" placeholder=" Enter Your Email" required/><br></br>
+              <textarea  name="message" rows={5} cols={40} placeholder=" Enter Your Message"></textarea><br></br>
+              <input type="submit" value="Send Email"></input>
           </form>
           </div>
     </PageContainer>
