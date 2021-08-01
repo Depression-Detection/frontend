@@ -24,6 +24,9 @@ const PageContainer = styled(Page)`
     margin-top: 12px;
     border-radius: 10px;
   }
+  button{
+    color: white;
+  }
 `;
 
 const Title = styled.h1`
@@ -59,9 +62,9 @@ export const ContactPage = () => {
             action="https://docs.google.com/forms/d/e/1FAIpQLSdImxRE6HvZ9RWxLSapQikPS9VSYaCuwIAHAxeN3t06sxYn7w/formResponse"
             target="dummyframe"
           >
-            <input type="text" placeholder="Name" name="entry.1325935210" />
-            <input type="email" placeholder="Email" name="entry.639034199" />
-            <input type="text" placeholder="Comment" name="entry.690565494" />
+            <input type="text" placeholder=" Name" name="entry.1325935210" required/><br></br>
+            <input type="email" placeholder=" Email" name="entry.639034199" required/><br></br>
+            <textarea  name="entry.690565494" rows={5} cols={40} placeholder=" Enter Your Message" required></textarea><br></br>
             <Button type="submit" >
               Submit
             </Button>
