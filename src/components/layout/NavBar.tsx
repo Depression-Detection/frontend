@@ -149,7 +149,7 @@ export const NavBar: React.FC<NavBarType> = (props) => {
               About
             </ClearLink>
             <ClearLink to="/contact-us" style={{ marginLeft: '2rem' }}>
-              Contact Us
+              Contact&nbsp;Us
             </ClearLink>
           </NavSection>
         </NavContainer>
