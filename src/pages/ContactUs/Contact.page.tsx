@@ -113,7 +113,7 @@ export const ContactPage = () => {
           <form 
             method="POST"
             action="https://docs.google.com/forms/d/e/1FAIpQLSdImxRE6HvZ9RWxLSapQikPS9VSYaCuwIAHAxeN3t06sxYn7w/formResponse"
-            target="dummyframe"
+            target="dummyframe" 
           >
             <InputBlock>
               <InputContainer>
