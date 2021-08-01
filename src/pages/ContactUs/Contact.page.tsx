@@ -38,9 +38,6 @@ const Submit = styled.input`
   color: black;
   font-family: Verdana, serif;
 `;
-
-
-
 export const ContactPage = () => {
 
   return (
@@ -56,11 +53,11 @@ export const ContactPage = () => {
               <Submit type="submit" value="Send Email"></Submit>
           </form>
           </div> */}
-          <iframe name="dummyframe" id="dummyframe" width="0" height="0"></iframe>
+          <iframe name="dummyframe" id="dummyframe" width="0" height="0" frameBorder="0"></iframe> 
           <form 
             method="POST"
             action="https://docs.google.com/forms/d/e/1FAIpQLSdImxRE6HvZ9RWxLSapQikPS9VSYaCuwIAHAxeN3t06sxYn7w/formResponse"
-            target="dummyframe"
+            target="dummyframe" 
           >
             <input type="text" placeholder=" Name" name="entry.1325935210" required/><br></br>
             <input type="email" placeholder=" Email" name="entry.639034199" required/><br></br>
