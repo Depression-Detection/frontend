@@ -55,8 +55,8 @@ export const AboutPage = () => {
             As such, we do not tie the user's usernames to their data in order to maintain privacy.
           </p>
           <p>
-            All the data we collect from our social media surveys have a lifetime of exactly 14 days. 
-            Following the fourteenth day of the data's life, the data will be deleted.
+            All the data we collect from our social media surveys have a short lifetime. 
+            Following the end of this timeframe, the data will be deleted. 
           </p>
           <h3>{'Data Protection'}</h3>
           <p>
