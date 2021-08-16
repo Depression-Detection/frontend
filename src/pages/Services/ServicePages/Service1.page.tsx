@@ -13,9 +13,9 @@ export const Image = styled(Img)`
 `;
 
 const Hero = styled(HeroBlack)`
-    min-height: 40rem;
+    min-height: 30rem;
     padding-top: 5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     position: relative;
     @media screen and (max-width: 800px) {
         margin-bottom: 0;
@@ -32,7 +32,6 @@ const Hero = styled(HeroBlack)`
 
 const PageContainer = styled(Page)`
     background: black;
-    
 `;
 
 const Title = styled.h1`
@@ -59,7 +58,6 @@ const UpdateLog = styled.div`
 
 const DateText = styled.div`
     color: white;
-    
     font-family: Verdana, serif;
     font-size: .75em;
 `;
@@ -74,6 +72,33 @@ const TextContainer = styled.div`
 const ImageContainer = styled.div`
     display: flex;
     align-items: center;
+`;
+
+const Container = styled.div`
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+`;
+
+const WhiteContainer = styled(Container)`
+    background-color: #FFF;
+    
+`;
+const IvoryContainer = styled(Container)`
+    background-color: #F6F6F4;
+`;
+
+const BottomHeader = styled.h1`
+    font-family: Charter, Georgia, serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding-left: 5%;
+    padding-bottom: 1rem;
+`;
+
+const AbstractContent = styled.p`
+    font-family: Charter, Georgia, serif;
+    font-size: 20px;
+    padding-left: 5%;
 `;
 
 export const AboutPage = () => {
@@ -107,6 +132,33 @@ export const AboutPage = () => {
             />
         </ImageContainer>
       </Hero>
+      <WhiteContainer>
+        <BottomHeader>
+            Abstract
+        </BottomHeader>
+        <AbstractContent>
+            Depression affects approximately 17.3 million American adults, or 7.1% of the American population, in a given year. Our purpose in creating this depression detector was to help fight against the depression epidemic which has been plaguing our nation. 
+        </AbstractContent>
+        <AbstractContent>
+            Through the use of Artificial Intelligence and data gathered from reddit users, we have created a model which takes in the username of a reddit user, scans their posts over the last month, and outputs their depression percent. This value states how much correlation our model found between their posts and those of a typical depressed user from our collected data.
+        </AbstractContent>
+        <AbstractContent>
+            Our model had an accuracy rating of 93% on detecting depression in individual comments and an accuracy rating of 92% on detecting depression when used on users as a whole.
+        </AbstractContent>
+        <AbstractContent>
+            Through the use of artificial intelligence and reddit data, we have created a model which can accurately detect depression in reddit users. We have now released this model so that it can be used to aid in depression detection and fight this epidemic that is depression.
+        </AbstractContent>
+      </WhiteContainer>
+      <IvoryContainer>
+        <BottomHeader>
+            More Chart Section
+        </BottomHeader>
+      </IvoryContainer>
+      <WhiteContainer>
+        <BottomHeader>
+            Model
+        </BottomHeader>
+      </WhiteContainer>
     </PageContainer>
   );
 };

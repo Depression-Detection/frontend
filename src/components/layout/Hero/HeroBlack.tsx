@@ -38,7 +38,7 @@ const Hero = styled.div`
 
   &:before {
     
-    box-shadow: 0 0 540px 164px rgb(255,255,255, .3);
+    box-shadow: 0 0 540px 164px rgb(246,246,244, .3);
     z-index:2;
     bottom: -100%;
     left: -75%;
