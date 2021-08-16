@@ -103,7 +103,6 @@ export const ContactPage = () => {
     inputs[1].value = "";
     document.getElementsByTagName('textarea')[0].value = "";
    }
-
   return (
     <>
     <PageContainer>
@@ -113,7 +112,8 @@ export const ContactPage = () => {
           <form 
             method="POST"
             action="https://docs.google.com/forms/d/e/1FAIpQLSdImxRE6HvZ9RWxLSapQikPS9VSYaCuwIAHAxeN3t06sxYn7w/formResponse"
-            target="dummyframe" 
+            target="dummyframe"
+            onSubmit={confirmAlert}
           >
             <InputBlock>
               <InputContainer>
@@ -129,7 +129,7 @@ export const ContactPage = () => {
                 <TextArea  name="entry.690565494" rows={5} cols={40} required></TextArea>
               </InputContainer>
               <SubmitContainer>
-                <SubmitButton type="submit" onClick={confirmAlert}>Submit</SubmitButton>
+                <SubmitButton type="submit">Submit</SubmitButton>
               </SubmitContainer>
               
             </InputBlock>
