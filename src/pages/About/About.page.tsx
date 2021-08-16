@@ -109,7 +109,7 @@ export const AboutPage = () => {
         <Content contentCenter style={{ position: 'center', zIndex: 100 }}>
           <h1>{'About'}</h1>
           <h3>Our Mission</h3>
-          <p>We aim to create a better world through the union of Artificial Intelligence and human health.</p>
+          <p>We aim to create a better world by diagnosing depression through the use of the union of Artificial Intelligence and human health.</p>
         </Content>
       </Hero>
       <WrapperLight>
