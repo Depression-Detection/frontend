@@ -137,7 +137,8 @@ export const AboutPage = () => {
             Abstract
         </BottomHeader>
         <AbstractContent>
-            Depression affects approximately 17.3 million American adults, or 7.1% of the American population, in a given year. Our purpose in creating this depression detector was to help fight against the depression epidemic which has been plaguing our nation. 
+        According to the World Health Organization 264 million individuals experience depression world wide. The purpose of our model is to combat the depression epidemic which is rapidly spreading with the increased usage of technology and social media by providing a quick, general assessment of one’s mental health. We have used a convolutional neural network with over 168 thousand different parameters to train a machine learning model which takes in the username of a reddit user and scans their posts over the last month to output a mental wellness score. This score represents how much correlation our model found between their posts and those of other depressed users from our collected data. Do not rely on our model as an alternative for a depression diagnosis by a medical professional; this score is intended to provide an insight on your mental wellness. Use these results at your own discretion. 
+
         </AbstractContent>
       </WhiteContainer>
       <IvoryContainer>
