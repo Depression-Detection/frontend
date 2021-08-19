@@ -102,6 +102,47 @@ const AbstractContent = styled.p`
 `;
 
 export const AboutPage = () => {
+    // Dont Touch --
+    function submitToAPI(e) {
+        e.preventDefault();
+        var URL = "https://68zlyjxfti.execute-api.us-east-1.amazonaws.com/default/sendMail";
+ 
+        let name = (document.getElementById("name") as HTMLInputElement).value;
+        let email = (document.getElementById("email") as HTMLInputElement).value;
+
+        if (name=="" || email=="")
+         {
+             alert("Please Fill All Required Field");
+             return false;
+         }
+         
+        const emailRE = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+         if(!emailRE.test(email)) {
+             alert("Email Address entered, is not valid");
+                 return false;
+         }
+        var data = {
+           name : name,
+           email : email,
+         };
+ 
+         var xmlhttp = new XMLHttpRequest();
+         xmlhttp.open("POST", URL);
+         xmlhttp.setRequestHeader("Content-Type", "application/json");
+         xmlhttp.send(JSON.stringify(data));
+         xmlhttp.onreadystatechange = function() {
+         if (xmlhttp.readyState === 4) {
+             var response = JSON.parse(xmlhttp.responseText);
+             if (xmlhttp.status === 200 ) {
+                 console.log('successful');
+                //  (document.getElementById("model-form") as HTMLInputElement).innerHTML = "<h1>Thank you for your username<br>our team will get back to you soon!</h1>";
+             } else {
+                 console.log('failed');
+             }
+         }
+     }
+     } 
+    // Dont Touch -- 
   return (
     <PageContainer>
       <Hero>
@@ -148,7 +189,14 @@ export const AboutPage = () => {
       </IvoryContainer>
       <WhiteContainer>
         <BottomHeader>
-            Model
+        <h2>Our Model</h2>
+        <form id="model-form" method="post">
+            <h4>Reddit Username:</h4>
+            <input id="name" type="text"/>
+            <h4>Email:</h4>
+            <input id="email" type="email"/><br/><br/>
+            <button type="button" onClick={submitToAPI}>Submit</button>
+        </form>
         </BottomHeader>
       </WhiteContainer>
     </PageContainer>
