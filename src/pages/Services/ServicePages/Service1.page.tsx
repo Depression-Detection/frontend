@@ -101,6 +101,17 @@ const AbstractContent = styled.p`
     padding-left: 5%;
 `;
 
+const FormBox = styled.fieldset`
+  display: block;
+  margin-left: 2px;
+  margin-right: 80px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
+`;
+
 export const AboutPage = () => {
     // Dont Touch --
     function submitToAPI(e) {
@@ -188,14 +199,16 @@ export const AboutPage = () => {
         </BottomHeader>
       </IvoryContainer>
       <WhiteContainer>
+      <BottomHeader>Our Model</BottomHeader>
         <BottomHeader>
-        <h2>Our Model</h2>
         <form id="model-form" method="post">
-            <h4>Reddit Username:</h4>
-            <input id="name" type="text"/>
-            <h4>Email:</h4>
-            <input id="email" type="email"/><br/><br/>
-            <button type="button" onClick={submitToAPI}>Submit</button>
+            <FormBox>
+                <h4>Reddit Username:</h4>
+                <input id="name" type="text" border-radius="5px"/>
+                <h4>Email:</h4>
+                <input id="email" type="email"/><br/><br/>
+                <button type="button" onClick={submitToAPI}>Submit</button>
+            </FormBox>
         </form>
         </BottomHeader>
       </WhiteContainer>
