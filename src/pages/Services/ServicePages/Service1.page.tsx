@@ -112,6 +112,24 @@ const FormBox = styled.fieldset`
   border: 2px groove (internal value);
 `;
 
+const Input = styled.input`
+  width: 30%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 30px;
+`;
+
+const SubmitButton = styled.button`
+  color: black;
+  background-color: white;
+  width: 10%;
+  border-radius: 5px;
+`;
+
 export const AboutPage = () => {
     // Dont Touch --
     function submitToAPI(e) {
@@ -203,11 +221,11 @@ export const AboutPage = () => {
         <BottomHeader>
         <form id="model-form" method="post">
             <FormBox>
-                <h4>Reddit Username:</h4>
-                <input id="name" type="text" border-radius="5px"/>
-                <h4>Email:</h4>
-                <input id="email" type="email"/><br/><br/>
-                <button type="button" onClick={submitToAPI}>Submit</button>
+                <h6>Reddit Username:</h6>
+                <Input id="name" type="text"/>
+                <h6>Email:</h6>
+                <Input id="email" type="email"/><br/><br/>
+                <SubmitButton type="button" onClick={submitToAPI}>Submit</SubmitButton>
             </FormBox>
         </form>
         </BottomHeader>
