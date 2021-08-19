@@ -8,7 +8,6 @@ import React from 'react';
 import { Img } from 'src/components/Img';
 
 export const Image = styled(Img)`
-  height: 400px;
   padding-left: 25%;
 `;
 
@@ -81,37 +80,40 @@ const Container = styled.div`
 
 const WhiteContainer = styled(Container)`
     background-color: #FFF;
-    
+    padding-left: 5%;
+    padding-right: 5%;
 `;
 const IvoryContainer = styled(Container)`
     background-color: #F6F6F4;
+    padding-left: 5%;
+    padding-right: 5%;
 `;
 
 const BottomHeader = styled.h1`
     font-family: Charter, Georgia, serif;
     font-weight: 400;
     font-size: 30px;
-    padding-left: 5%;
     padding-bottom: 1rem;
 `;
 
 const AbstractContent = styled.p`
     font-family: Charter, Georgia, serif;
     font-size: 20px;
-    padding-left: 5%;
 `;
 
-const FormBox = styled.fieldset`
-  display: block;
-  margin-left: 2px;
-  margin-right: 80px;
-  padding-top: 0.35em;
-  padding-bottom: 0.625em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  border: 2px groove (internal value);
+const FormBox = styled.div`
+    display: block;
+    margin-left: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    align-items: center;
 `;
 
+const Form = styled.form`
+  
+`;
 const Input = styled.input`
   width: 30%;
   padding: 12px 10px;
@@ -126,15 +128,48 @@ const Input = styled.input`
 const SubmitButton = styled.button`
   color: black;
   background-color: white;
-  width: 10%;
+  width: 100px;
   border-radius: 5px;
 `;
 
 
-const FormTitles = styled.h6`
-  color: black;
+const FormTitles = styled.h4`
+  color: #151519;
   font-family: Verdana, serif;
   font-weight:normal;
+`;
+
+const ModelContainer = styled.div`
+    background-color: black;
+    width: 80%
+    display: block;
+    margin-left: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    box-shadow: 0 0px 20px 0 #b09cdc;
+    border-radius: 10px;
+    background: linear-gradient(217deg, rgba(212,196,263,.8), rgba(255,0,0,.1) 70.71%),
+                linear-gradient(127deg, rgba(176,156, 220,.8), rgba(255,255,0,.1) 70.71%),
+                linear-gradient(336deg, rgba(151,152,255,.8), rgba(255,0,255,.1) 70.71%);
+`;
+
+const ModelContent = styled.div`
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 33%;
+`;
+
+const LeftContent = styled(ModelContent)`
+
+`;
+
+const MiddleContent = styled(ModelContent)`
+    text-align: center;
+`;
+
+const RightContent = styled(ModelContent)`
+    text-align: center;
 `;
 
 export const AboutPage = () => {
@@ -224,18 +259,26 @@ export const AboutPage = () => {
         </BottomHeader>
       </IvoryContainer>
       <WhiteContainer>
-      <BottomHeader>Our Model</BottomHeader>
-        <BottomHeader>
-        <form id="model-form" method="post">
-            <FormBox>
-                <FormTitles>Reddit Username:</FormTitles>
-                <Input id="name" type="text" required/>
-                <FormTitles>Email:</FormTitles>
-                <Input id="email" type="email" required/><br/><br/>
-                <SubmitButton type="button" onClick={submitToAPI}>Submit</SubmitButton>
-            </FormBox>
-        </form>
-        </BottomHeader>
+            <BottomHeader>Our Model</BottomHeader>
+            <ModelContainer>
+                <LeftContent>
+                    <Form id="model-form" method="post">
+                        <FormBox>
+                            <FormTitles>Reddit Username:</FormTitles>
+                            <Input id="name" type="text" required/>
+                            <FormTitles>Email:</FormTitles>
+                            <Input id="email" type="email" required/><br/><br/>
+                            <SubmitButton type="button" onClick={submitToAPI}>Submit</SubmitButton>
+                        </FormBox>
+                    </Form>
+                </LeftContent>
+                <MiddleContent>
+                    <FormTitles>How to use</FormTitles>
+                </MiddleContent>
+                <RightContent>
+                    <FormTitles>What it does</FormTitles>
+                </RightContent>
+          </ModelContainer>
       </WhiteContainer>
     </PageContainer>
   );

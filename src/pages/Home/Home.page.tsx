@@ -26,6 +26,10 @@ const PageContainer = styled(Page)`
   background: var(--bg-secondary);
 `;
 
+const Content2 = styled(Content)`
+  padding-left: 0%;
+`;
+
 export const HomePage = () => {
   return (
     <PageContainer>
@@ -33,11 +37,11 @@ export const HomePage = () => {
         <title>head title</title>
       </Helmet> */}
       <Hero>
-        <Content contentCenter style={{ position: 'center', zIndex: 100 }}>
+        <Content2 contentCenter style={{ position: 'center', zIndex: 100 }}>
           <h1>{'Omicron'}</h1>
           <p>We are currently under development</p>
           <a href="https://twitter.com/omicron_life" target="_blank">Click here for Updates</a>
-        </Content>
+        </Content2>
         <Spacer />
         {/* <CoinEarnings /> */}
         <Spacer />

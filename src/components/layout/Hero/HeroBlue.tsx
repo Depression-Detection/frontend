@@ -26,7 +26,10 @@ const Hero = styled.div`
   & {
     position: relative;
     z-index: 1;
-    background: linear-gradient(45deg, #013f28, #1c0c64);
+    // background: linear-gradient(45deg, #013f28, #1c0c64);
+    background: linear-gradient(217deg, rgba(255,80,80,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255, 128,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(51,102,255,.8), rgba(0,0,255,0) 70.71%);
   }
 
   &:before {
