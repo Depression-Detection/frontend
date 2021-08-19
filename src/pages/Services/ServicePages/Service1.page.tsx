@@ -117,7 +117,7 @@ const Input = styled.input`
   padding: 12px 10px;
   margin: 8px 0;
   display: inline-block;
-  border: 2px solid #ccc;
+  border: 2px solid #767676;
   border-radius: 4px;
   box-sizing: border-box;
   height: 30px;
@@ -128,6 +128,13 @@ const SubmitButton = styled.button`
   background-color: white;
   width: 10%;
   border-radius: 5px;
+`;
+
+
+const FormTitles = styled.h6`
+  color: black;
+  font-family: Verdana, serif;
+  font-weight:normal;
 `;
 
 export const AboutPage = () => {
@@ -221,10 +228,10 @@ export const AboutPage = () => {
         <BottomHeader>
         <form id="model-form" method="post">
             <FormBox>
-                <h6>Reddit Username:</h6>
-                <Input id="name" type="text"/>
-                <h6>Email:</h6>
-                <Input id="email" type="email"/><br/><br/>
+                <FormTitles>Reddit Username:</FormTitles>
+                <Input id="name" type="text" required/>
+                <FormTitles>Email:</FormTitles>
+                <Input id="email" type="email" required/><br/><br/>
                 <SubmitButton type="button" onClick={submitToAPI}>Submit</SubmitButton>
             </FormBox>
         </form>
