@@ -133,7 +133,7 @@ const SubmitButton = styled.button`
 `;
 
 
-const FormTitles = styled.h4`
+const FormTitle = styled.h4`
   color: #151519;
   font-family: Verdana, serif;
   font-weight:normal;
@@ -176,8 +176,8 @@ export const AboutPage = () => {
     // Dont Touch --
     function submitToAPI(e) {
         e.preventDefault();
-        var URL = "https://68zlyjxfti.execute-api.us-east-1.amazonaws.com/default/sendMail";
- 
+        var URL = "https://fvxw67h6bl.execute-api.us-east-1.amazonaws.com/default/GetData";
+        
         let name = (document.getElementById("name") as HTMLInputElement).value;
         let email = (document.getElementById("email") as HTMLInputElement).value;
 
@@ -194,24 +194,13 @@ export const AboutPage = () => {
          }
         var data = {
            name : name,
-           email : email,
+           email : email
          };
  
          var xmlhttp = new XMLHttpRequest();
          xmlhttp.open("POST", URL);
          xmlhttp.setRequestHeader("Content-Type", "application/json");
          xmlhttp.send(JSON.stringify(data));
-         xmlhttp.onreadystatechange = function() {
-         if (xmlhttp.readyState === 4) {
-             var response = JSON.parse(xmlhttp.responseText);
-             if (xmlhttp.status === 200 ) {
-                 console.log('successful');
-                //  (document.getElementById("model-form") as HTMLInputElement).innerHTML = "<h1>Thank you for your username<br>our team will get back to you soon!</h1>";
-             } else {
-                 console.log('failed');
-             }
-         }
-     }
      } 
     // Dont Touch -- 
   return (
@@ -264,19 +253,19 @@ export const AboutPage = () => {
                 <LeftContent>
                     <Form id="model-form" method="post">
                         <FormBox>
-                            <FormTitles>Reddit Username:</FormTitles>
+                            <FormTitle>Reddit Username:</FormTitle>
                             <Input id="name" type="text" required/>
-                            <FormTitles>Email:</FormTitles>
+                            <FormTitle>Email:</FormTitle>
                             <Input id="email" type="email" required/><br/><br/>
                             <SubmitButton type="button" onClick={submitToAPI}>Submit</SubmitButton>
                         </FormBox>
                     </Form>
                 </LeftContent>
                 <MiddleContent>
-                    <FormTitles>How to use</FormTitles>
+                    <FormTitle>How to use</FormTitle>
                 </MiddleContent>
                 <RightContent>
-                    <FormTitles>What it does</FormTitles>
+                    <FormTitle>What it does</FormTitle>
                 </RightContent>
           </ModelContainer>
       </WhiteContainer>
