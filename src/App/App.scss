@@ -53,12 +53,11 @@ body {
   // font-family: 'Inter', sans-serif;
   // font-size: 16px;
   color: var(--text-primary);
-  -webkit-overflow-scrolling: touch;
-  overflow-x: hidden;
-}
 
+  overflow-x: hidden !important;
+}
 body.scroll-lock {
-  overflow: hidden;
+  overflow-x: hidden !important;
   height: 100vh;
 }
 
@@ -119,25 +118,6 @@ li {
   margin-left: 1.5rem;
 }
 
-/** tables **/
-
-table {
-  // overflow-x: auto;
-  // display: block;
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 5px;
-  border-spacing: 0;
-  color: var(--text-secondary);
-  border: 1px solid var(--border-color);
-  background: var(--bg-primary);
-}
-// table tbody,
-// table thead {
-//   display: table;
-//   width: 100%;
-// }
-
 td,
 th {
   padding-left: 1rem;
@@ -150,38 +130,9 @@ th {
   }
 }
 
-// td {
-//   padding-top: 1rem;
-//   padding-bottom: 1rem;
-//   text-align: left;
-//   color: var(--text-secondary);
-//   font-weight: 500;
-//   border-top: 1px solid var(--border-color);
-
-//   color: var(--text-primary);
-// }
-
 tr:first-child td {
   border-top: none;
 }
-
-// thead td,
-// th {
-//   text-transform: uppercase;
-//   font-weight: 600;
-//   font-size: 0.75rem;
-//   white-space: nowrap;
-
-//   font-weight: 700;
-//   text-align: left;
-//   padding-top: 0.75rem;
-//   padding-bottom: 0.75rem;
-//   border-bottom: 1px solid var(--border-color);
-// }
-
-/**
-scrllbar
-**/
 
 * {
   scrollbar-color: var(--border-color);
