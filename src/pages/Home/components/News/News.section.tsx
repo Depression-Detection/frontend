@@ -5,11 +5,11 @@ import {
     Action,
     Wrapper,
     WrapperInner,
+    Content2,
   } from './components';
 import { Link } from 'react-router-dom';
 import React from 'react';
-import { Content } from 'src/components/layout/Content';
-  
+
   const HomeNewsItem: React.FC<{
     to?: string;
     href?: string;
@@ -40,7 +40,7 @@ import { Content } from 'src/components/layout/Content';
   export const NewsSection = () => {
     return (
       <Wrapper>
-        <Content style={{ position: 'relative' }}>
+        <Content2 style={{ position: 'relative' }}>
           <WrapperInner>
             <HomeNewsItem
               category={('Get Started')}
@@ -58,10 +58,10 @@ import { Content } from 'src/components/layout/Content';
               category={('Make a diffrence')}
               title={('Aid Discovery')}
               action={('Help')}
-              to="/help"
+              to="/about"
             />
           </WrapperInner>
-        </Content>
+        </Content2>
       </Wrapper>
     );
   };

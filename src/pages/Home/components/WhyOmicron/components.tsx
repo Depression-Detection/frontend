@@ -14,6 +14,9 @@ export const ClearLink = styled(Link) `
 
 export const Image = styled(Img)`
   height: 400px;
+  @media screen and (max-width: 780px) {
+    height: 350px;
+  }
 `;
 
 export const ItemsContainer = styled.div`

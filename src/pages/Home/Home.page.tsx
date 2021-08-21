@@ -8,9 +8,12 @@ import { WhatWeDoSection } from './components/WhatWeDo/WhatWeDo.section';
 
 import styled from 'styled-components/macro';
 import { Spacer } from 'src/components/layout/Spacer';
-import { Helmet } from 'react-helmet-async';
-import React from 'react';
+import { Link } from 'react-router-dom';
 
+export const ClearLink = styled(Link) `
+font-family: IBM Plex Sans Thai Looped;
+  font-size: 1.15rem;
+`;
 const Hero = styled(HeroBlue)`
   min-height: 40vh;
   padding-top: 10rem;
@@ -30,6 +33,10 @@ const Content2 = styled(Content)`
   padding-left: 0%;
 `;
 
+const Text = styled.h1`
+  font-family: IBM Plex Sans Thai Looped;
+`;
+
 export const HomePage = () => {
   return (
     <PageContainer>
@@ -38,9 +45,8 @@ export const HomePage = () => {
       </Helmet> */}
       <Hero>
         <Content2 contentCenter style={{ position: 'center', zIndex: 100 }}>
-          <h1>{'Omicron'}</h1>
-          <p>We are currently under development</p>
-          <a href="https://twitter.com/omicron_life" target="_blank">Click here for Updates</a>
+          <Text>{'Omicron'}</Text>
+          <ClearLink to="/services/mental-health-monitoring-on-social-media" >Click here to try out our new DD-1 Depression Detection Model!</ClearLink>
         </Content2>
         <Spacer />
         {/* <CoinEarnings /> */}

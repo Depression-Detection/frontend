@@ -1,4 +1,9 @@
 import styled from 'styled-components/macro';
+import { Content } from 'src/components/layout/Content';
+
+export const Content2 = styled(Content)`
+  margin:0 1rem;
+`;
 
 export const ItemWrapper = styled.a`
   min-height: 120px;
