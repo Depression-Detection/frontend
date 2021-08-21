@@ -1,14 +1,14 @@
-import { Content } from 'src/components/layout/Content';
 import { HeroBlack } from 'src/components/layout/Hero/HeroBlack';
 import { Page } from 'src/components/layout/Page';
 import styled from 'styled-components/macro';
-
-import { Helmet } from 'react-helmet-async';
-import React from 'react';
 import { Img } from 'src/components/Img';
+import { Button } from 'src/components/Button';
 
-export const Image = styled(Img)`
+const Image = styled(Img)`
   padding-left: 25%;
+    @media screen and (max-width: 780px) {
+        height: 0;
+      }
 `;
 
 const Hero = styled(HeroBlack)`
@@ -27,10 +27,12 @@ const Hero = styled(HeroBlack)`
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     align-items:
     gap: 2rem;
+    
 `;
 
 const PageContainer = styled(Page)`
     background: black;
+    max-width: 100%;
 `;
 
 const Title = styled.h1`
@@ -38,14 +40,22 @@ const Title = styled.h1`
     // padding-right: 50%;
     font-family: Georgia, serif;
     font-weight: normal;
+    @media screen and (max-width: 800px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 `;
 
 const Subtitle = styled.p`
     padding-left: 10%;
     // padding-right: 50%;
-    font-family: Verdana, serif;
-    margin: 0 0 24.5
+    font-family: Montserrat, Verdana, serif;
+    margin: 0 0 24.5;
     font-size: 1em;
+    @media screen and (max-width: 800px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 `;
 
 const UpdateLog = styled.div`
@@ -53,11 +63,15 @@ const UpdateLog = styled.div`
     vertical-align: bottom;
     padding-top: 10%;
     height: 100%;
+    @media screen and (max-width: 800px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 `;
 
 const DateText = styled.div`
     color: white;
-    font-family: Verdana, serif;
+    font-family: Montserrat, serif;
     font-size: .75em;
 `;
 
@@ -66,6 +80,7 @@ const TextContainer = styled.div`
     height: 100%;
     // width: 50%;
     vertical-align: top;
+
 `;
 
 const ImageContainer = styled.div`
@@ -103,54 +118,73 @@ const AbstractContent = styled.p`
 
 const FormBox = styled.div`
     display: block;
-    margin-left: 2px;
-    padding-top: 0.35em;
-    padding-bottom: 0.625em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
+    justify-content: center;
     align-items: center;
+    @media screen and (max-width: 800px) {
+        width: 200%;
+    }
 `;
 
 const Form = styled.form`
   
 `;
-const Input = styled.input`
-  width: 30%;
-  padding: 12px 10px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 2px solid #767676;
-  border-radius: 4px;
-  box-sizing: border-box;
-  height: 30px;
+
+const HiddenFrame = styled.iframe`
+  border-width: 0px;
 `;
 
-const SubmitButton = styled.button`
-  color: black;
-  background-color: white;
-  width: 100px;
+const Input = styled.input`
+  width: 200px;
+  height: 200%;
+  border: 0px solid #767676;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
   border-radius: 5px;
+  font-size: 17.5px;
+  box-sizing: border-box;
+  height: 30px;
+  box-shadow: 0 0px 10px 0 white;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+`;
+
+const SubmitButton = styled(Button)`
+  color: rgba(151,152,255,1);
+  background: white;
+  width: 100px;
+  height: 30px;
+  justify-content: center;
+  font-family: Montserrat;
+  box-shadow: 0 0px 10px 0 white;
 `;
 
 
 const FormTitle = styled.h4`
   color: #151519;
-  font-family: Verdana, serif;
-  font-weight:normal;
+  margin: 0px;
+  filter: invert(1);
+  mix-blend-mode: difference;
+  font-family: Montserrat, Georgia, serif;
+  font-weight: 600;
+  font-size: 20px;
+  transform: scale(.95, 1);
 `;
 
 const ModelContainer = styled.div`
     background-color: black;
-    width: 80%
     display: block;
-    margin-left: 2px;
-    padding-top: 0.35em;
-    padding-bottom: 0.625em;
+    padding: 1rem;
     box-shadow: 0 0px 20px 0 #b09cdc;
     border-radius: 10px;
     background: linear-gradient(217deg, rgba(212,196,263,.8), rgba(255,0,0,.1) 70.71%),
                 linear-gradient(127deg, rgba(176,156, 220,.8), rgba(255,255,0,.1) 70.71%),
                 linear-gradient(336deg, rgba(151,152,255,.8), rgba(255,0,255,.1) 70.71%);
+    @media screen and (max-width: 800px) {
+        justify-content: center;
+        display: flex;
+    }
 `;
 
 const ModelContent = styled.div`
@@ -161,19 +195,49 @@ const ModelContent = styled.div`
 `;
 
 const LeftContent = styled(ModelContent)`
-
+    text-align: center;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;
 
 const MiddleContent = styled(ModelContent)`
     text-align: center;
+    @media screen and (max-width: 800px) {
+        align-items: center;
+        padding-right: 33%;
+    }
 `;
 
 const RightContent = styled(ModelContent)`
     text-align: center;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+`;
+
+const InfoTextContainer = styled.div`
+    display: block;
+`;
+
+const InfoTextBox = styled.div`
+    display: inline-block;
+    vertical-align: middle;
+    background: white;
+    justify-content: center;
+    width: 35%;
+    margin: .625rem;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0px 10px 0 white;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 15px;
 `;
 
 export const AboutPage = () => {
     // Dont Touch --
+
     function submitToAPI(e) {
         e.preventDefault();
         var URL = "https://fvxw67h6bl.execute-api.us-east-1.amazonaws.com/default/GetData";
@@ -183,24 +247,25 @@ export const AboutPage = () => {
 
         if (name=="" || email=="")
          {
-             alert("Please Fill All Required Field");
-             return false;
+            alert("Please fill all required fields");
+            return false;
          }
          
         const emailRE = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
          if(!emailRE.test(email)) {
-             alert("Email Address entered, is not valid");
-                 return false;
+            alert("Email address entered, is not valid");
+            return false;
          }
         var data = {
            name : name,
            email : email
          };
- 
          var xmlhttp = new XMLHttpRequest();
          xmlhttp.open("POST", URL);
          xmlhttp.setRequestHeader("Content-Type", "application/json");
          xmlhttp.send(JSON.stringify(data));
+         (document.getElementById('myform') as HTMLFormElement).submit();
+         alert("Your request has been submitted! You will recieve your score in your email within the next 24 hours!");
      } 
     // Dont Touch -- 
   return (
@@ -220,7 +285,7 @@ export const AboutPage = () => {
                     Last Updated
                 </DateText>
                 <DateText>
-                    July 18, 2021
+                    August 21, 2021
                 </DateText>
             </UpdateLog>
         </TextContainer>
@@ -238,8 +303,7 @@ export const AboutPage = () => {
             Abstract
         </BottomHeader>
         <AbstractContent>
-        According to the World Health Organization 264 million individuals experience depression world wide. The purpose of our model is to combat the depression epidemic which is rapidly spreading with the increased usage of technology and social media by providing a quick, general assessment of one’s mental health. We have used a convolutional neural network with over 168 thousand different parameters to train a machine learning model which takes in the username of a Reddit user and scans their posts over the last month to output a mental wellness score. This score represents how much correlation our model found between their posts and those of other depressed users from our collected data. Do not rely on our model as an alternative for a depression diagnosis by a medical professional; this score is intended to provide an insight on your mental wellness. Use these results at your own discretion. 
-
+        According to the World Health Organization 264 million individuals experience depression world wide. The purpose of our model is to combat the depression epidemic which is rapidly spreading with the increased usage of technology and social media by providing a quick, general assessment of one’s mental health. We have used a convolutional neural network with over 168 thousand different parameters to train a machine learning model which takes in the username of a Reddit user and scans their posts over the last month to output a mental wellness score. This score represents how much correlation our model found between their posts and those of other depressed users from our collected data. Do not rely on our model as an alternative for a depression diagnosis by a medical professional; this score is intended to provide an insight on your mental wellness. Use these results at your own discretion.
         </AbstractContent>
       </WhiteContainer>
       <IvoryContainer>
@@ -248,24 +312,48 @@ export const AboutPage = () => {
         </BottomHeader>
       </IvoryContainer>
       <WhiteContainer>
-            <BottomHeader>Our Model</BottomHeader>
+            <BottomHeader>Our Model: DD-1</BottomHeader>
             <ModelContainer>
                 <LeftContent>
-                    <Form id="model-form" method="post">
-                        <FormBox>
-                            <FormTitle>Reddit Username:</FormTitle>
-                            <Input id="name" type="text" required/>
-                            <FormTitle>Email:</FormTitle>
-                            <Input id="email" type="email" required/><br/><br/>
-                            <SubmitButton type="button" onClick={submitToAPI}>Submit</SubmitButton>
-                        </FormBox>
-                    </Form>
+                    <FormTitle>How to use our model</FormTitle>
+                    <InfoTextContainer>
+                        <InfoTextBox>
+                            To try out our model, just enter your reddit username, and make sure to exlude 'u/'. Within the next 24 hours, you will recieve an email with your mental wellness score ranging from 0-10.
+                        </InfoTextBox>
+                        <InfoTextBox>
+                            When interpreting your score, please note that your score is purely based on conjecture rather than knowledge. Therefore, we cannot provide you with a fully accurate accurate score. 
+                        </InfoTextBox>
+                    </InfoTextContainer>
                 </LeftContent>
                 <MiddleContent>
-                    <FormTitle>How to use</FormTitle>
+                    
+                    <HiddenFrame name="dummyframe" id="dummyframe" width="0" height="0"></HiddenFrame>
+                    <Form 
+                        method="POST"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSed3iw5Lew8E2Tf7p-CLR96kXLGgpf46fuhQ4mzEp9DfZjckQ/formResponse"
+                        target="dummyframe"
+                        id="myform"
+                        onSubmit={submitToAPI}
+                    >
+                        <FormBox>
+                            <FormTitle>Reddit Username:</FormTitle>
+                            <Input name="entry.905274474" id="name" type="text" required/>
+                            <FormTitle>Email:</FormTitle>
+                            <Input name="entry.2119216734" id="email" type="email" required/><br/><br/>
+                            <SubmitButton type="submit">Submit</SubmitButton>
+                        </FormBox>
+                    </Form>
                 </MiddleContent>
                 <RightContent>
-                    <FormTitle>What it does</FormTitle>
+                    <FormTitle>What our model does</FormTitle>
+                    <InfoTextContainer>
+                        <InfoTextBox>
+                            Our model connects to the Reddit API (praw) and pulls publicly available information that is run through our model to output a mental wellness score from 0 (not depressed) to 10 (depressed).
+                        </InfoTextBox>
+                        <InfoTextBox>
+                            We use a multimodal approach to analyze various aspects of a users' reddit profile. The data used to train our convolutional neural network was labeled by DSM-5 criteria.
+                        </InfoTextBox>
+                    </InfoTextContainer>
                 </RightContent>
           </ModelContainer>
       </WhiteContainer>
