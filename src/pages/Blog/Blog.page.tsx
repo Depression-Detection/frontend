@@ -2,7 +2,7 @@ import { Content } from 'src/components/layout/Content';
 import { HeroBlue } from 'src/components/layout/Hero/HeroBlue';
 import { Page } from 'src/components/layout/Page';
 import styled from 'styled-components/macro';
-import { ClearLink, ItemsContainer, Item, Title, PageContainer, NavBlock, Categories, TitleLink, Date } from './components';
+import { ClearLink, Content2, ItemsContainer, Item, Title, PageContainer, NavBlock, Categories, TitleLink, Date } from './components';
 import { Spacer } from 'src/components/layout/Spacer';
 
 import { Helmet } from 'react-helmet-async';
@@ -12,7 +12,7 @@ export const BlogPage = () => {
   return (
     <PageContainer>
       <NavBlock></NavBlock>
-      <Content padding>
+      <Content2 padding>
         <Spacer size="xl" />
         <Title>{('Our Blog')}</Title>
         <ItemsContainer>
@@ -27,7 +27,7 @@ export const BlogPage = () => {
           </Item>
         </ItemsContainer>
         <Spacer size="xl" />
-      </Content>
+      </Content2>
     </PageContainer>
   );
 };

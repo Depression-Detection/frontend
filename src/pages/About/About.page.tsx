@@ -23,10 +23,10 @@ const Hero = styled(HeroBlack)`
   padding-top: 4rem;
   padding-bottom: 10rem;
   justify-content: top;
-
+  box-shadow: 0 0px 20px 0 black;
   position: relative;
   @media screen and (max-width: 800px) {
-    margin-bottom: 0;
+    margin: 0;
     padding-bottom: 3rem;
   }
   
@@ -47,6 +47,7 @@ const Hero = styled(HeroBlack)`
   p {
     font-family: Verdana, serif;
     font-size: 1em;
+    width: 90%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: url("https://cdn.openai.com/research-covers/openai-charter/gradient.jpg");
@@ -55,10 +56,12 @@ const Hero = styled(HeroBlack)`
 
 const WrapperDark = styled(Hero)`
   padding-bottom: 4rem;
+  box-shadow: 0 0px 20px 0 black;
 `;
 
 const PageContainer = styled(Page)`
   background: var(--bg-secondary);
+  max-width: 100%;
 `;
 
 const WrapperLight = styled.div`
@@ -85,6 +88,7 @@ const WrapperLight = styled.div`
   p {
     font-family: Verdana, serif;
     font-size: 1em;
+    width: 100%
   }
 `;
 
@@ -92,6 +96,9 @@ const ContentRight = styled(Content)`
   // align-items: right;
   // justify-content: right;
   width: 70%;
+  @media screen and (max-width: 800px) {
+    margin-bottom: 0;
+  }
 `;
 
 const ElementWrap = styled.li`
@@ -100,17 +107,23 @@ const ElementWrap = styled.li`
   padding-left: 50px; //This should be equal to width of first element.
 `;
 
+const Content2 = styled(Content)`
+  @media screen and (max-width: 800px) {
+    margin: 0;
+  }
+`;
+
 export const AboutPage = () => {
   return (
     <>
     
     <PageContainer>
       <Hero>
-        <Content contentCenter style={{ position: 'center', zIndex: 100 }}>
+        <Content2 contentCenter style={{ position: 'center', zIndex: 100 }}>
           <h1>{'About'}</h1>
           <h3>Our Mission</h3>
           <p>We aim to create a better world by diagnosing depression through the use of the union of Artificial Intelligence and human health.</p>
-        </Content>
+        </Content2>
       </Hero>
       <WrapperLight>
         <ContentRight contentCenter>
@@ -126,23 +139,23 @@ export const AboutPage = () => {
         </ContentRight>
       </WrapperLight>
       <WrapperDark>
-        <Content contentCenter style={{ position: 'center', zIndex: 100 }}>
+        <Content2 contentCenter style={{ position: 'center', zIndex: 100 }}>
           <h3>Timeline</h3>
           <p>Data Collection for Mental Health Detection on Reddit— &nbsp;&nbsp;&nbsp; Summer 2021</p>
           <p>Expected Release of our Mental Health Detection on Reddit— &nbsp;&nbsp;&nbsp; Fall 2021</p>
-        </Content>
+        </Content2>
       </WrapperDark>
       <WrapperLight>
-        <Content contentCenter>
+        <Content2 contentCenter>
           <h2>{('Help End the Depression Epidemic')}</h2>
           <a href="https://forms.gle/BRLPi2uAS6KPF5wg6" target="_blank">Click here if you are interested in helping our research.</a>
-        </Content>
+        </Content2>
       </WrapperLight>
       <WrapperDark>
-        <Content contentCenter style={{ position: 'center', zIndex: 100 }}>
+        <Content2 contentCenter style={{ position: 'center', zIndex: 100 }}>
           <h3>Privacy Policy</h3>
           <ClearLink to="/about/privacy-policy">Click here to navigate to our Privacy Policy</ClearLink>
-        </Content>
+        </Content2>
       </WrapperDark>
     </PageContainer>
     </>

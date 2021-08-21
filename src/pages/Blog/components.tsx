@@ -3,6 +3,13 @@ import { Img } from 'src/components/Img';
 import { Link } from 'react-router-dom';
 import { HeroBlue } from 'src/components/layout/Hero/HeroBlue';
 import { Page } from 'src/components/layout/Page';
+import { Content } from 'src/components/layout/Content';
+
+export const Content2 = styled(Content)`
+  @media screen and (max-width: 800px) {
+    margin: 0 1rem;
+  }
+`;
 
 export const Wrapper = styled.div`
   background: white;
@@ -108,6 +115,7 @@ export const PageContainer = styled(Page)`
 export const NavBlock = styled.div`
   background: #151519;
   height: 4.5rem;
+  box-shadow: 0 0px 20px 0 black;
 `;
 
 export {}

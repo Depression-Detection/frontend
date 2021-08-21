@@ -25,6 +25,11 @@ const ClearLink = styled(Link) `
   font-size: .925rem;
 `;
 
+const Content2 = styled(Content)`
+  @media screen and (max-width: 780px) {
+  }
+`;
+
 const Footer = styled.footer`
   background: white;
   padding-top: 5rem;
@@ -53,6 +58,10 @@ const FSectionTitle = styled.h3`
 const SectionContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media screen and (max-width: 780px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 `;
 
 const Section = styled.div`
@@ -72,6 +81,11 @@ const FooterEnd = styled.div`
   flex-wrap: wrap;
   & > * {
     margin-top: 1.5rem;
+  }
+  @media screen and (max-width: 780px) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 90%;
   }
 `;
 
@@ -100,7 +114,7 @@ const HelpText = styled.p`
 export const FooterSection = () => {
   return (
     <Footer>
-      <Content>
+      <Content2>
         <SectionContainer>
           <Section>
             <FSectionTitle>{'Services'}</FSectionTitle>
@@ -138,7 +152,7 @@ export const FooterSection = () => {
             </LinkOut>
           </SocialIcons>
         </FooterEnd>
-      </Content>
+      </Content2>
     </Footer>
   );
 };
