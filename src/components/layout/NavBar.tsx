@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom';
 import { Img } from '../Img';
 
+const Content2 = styled(Content)`
+  margin: 0 1rem;
+`;
+
 export const ClearLink = styled(Link) `
   height: 100%;
   display: flex;
@@ -86,7 +90,7 @@ const ContainerMobile = styled(MobileNavContainerOuter)`
 
 export type NavBarType = {};
 
-const NavContainer = styled(Content)`
+const NavContainer = styled(Content2)`
   display: flex;
   justify-content: space-between;
   width: 100%;

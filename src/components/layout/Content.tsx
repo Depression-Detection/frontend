@@ -11,6 +11,10 @@ export const Content = styled.div<{
   max-width: 1200px;
   padding-left: 1rem;
   padding-right: 1rem;
+  @media screen and (max-width: 780px) {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
   ${(p) =>
     p.contentCenter &&
     `
