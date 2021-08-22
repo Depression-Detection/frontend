@@ -373,7 +373,7 @@ export const AboutPage = () => {
                             Our site features complete end-to-end encryption. And once you have recieved your score, all of your personal information will be deleted and we will only store the score.
                         </InfoTextBox>
                         <InfoTextBox>
-                            We use a multimodal approach to analyze various aspects of a users' reddit profile. The data is completely proccessed by code, and will never be read by humans.
+                            We use a multimodal approach to analyze various aspects of a users' Reddit profile. The data is completely proccessed by code, and will never be read by humans.
                         </InfoTextBox>
                     </InfoTextContainer>
                 </RightContent>
