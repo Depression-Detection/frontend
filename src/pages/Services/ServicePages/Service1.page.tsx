@@ -268,29 +268,24 @@ export const AboutPage = () => {
         var URL = "https://fvxw67h6bl.execute-api.us-east-1.amazonaws.com/default/GetData";
         
         let name = (document.getElementById("name") as HTMLInputElement).value;
-        let email = (document.getElementById("email") as HTMLInputElement).value;
 
-        if (name=="" || email=="")
+        if (name=="")
          {
             alert("Please fill all required fields");
             return false;
          }
          
         const emailRE = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-         if(!emailRE.test(email)) {
-            alert("Email address entered, is not valid");
-            return false;
-         }
+
         var data = {
-           name : name,
-           email : email
+           name : name
          };
          var xmlhttp = new XMLHttpRequest();
          xmlhttp.open("POST", URL);
          xmlhttp.setRequestHeader("Content-Type", "application/json");
          xmlhttp.send(JSON.stringify(data));
          (document.getElementById('myform') as HTMLFormElement).submit();
-         alert("Your request has been submitted! You will recieve your score in your email within the next 24 hours! Use your results at your own discretion");
+         alert("Your request has been submitted! You will recieve your score in a direct message to your Reddit account within the next 24 hours! Use your results at your own discretion");
      } 
     // Dont Touch -- 
   return (
