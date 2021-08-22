@@ -44,11 +44,15 @@ export const AboutPage = () => {
           <p>
             At any time, if you would like for us to gather or delete your data, please contact us at life.omicron@gmail.com.
           </p>
-          {/* <h3>{'Cookie Policy'}</h3>
+          <h3>{'AI Policy'}</h3>
           <p>
-            Cookies on our website are used to provide security and help us to improve the
-            user experience of our website.
-          </p> */}
+            Our AI decisions are not always intelligible to humans. AI is not neutral: AI-based decisions 
+            are susceptible to inaccuracies, discriminatory outcomes, embedded or inserted bias.
+          </p>
+          <p>
+            All results from any of our AI models are intended purely for academic use. Therefore, none 
+            of the results from our models should be evaluated for their intended purpose.
+          </p>
           <h3>{'Data Usage'}</h3>
           <p>
             All data collected by our social media surveys and forms are analyzed holistically. 

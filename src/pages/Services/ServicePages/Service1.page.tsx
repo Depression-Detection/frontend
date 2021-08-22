@@ -3,6 +3,7 @@ import { Page } from 'src/components/layout/Page';
 import styled from 'styled-components/macro';
 import { Img } from 'src/components/Img';
 import { Button } from 'src/components/Button';
+import { Link } from 'react-router-dom';
 
 const Image = styled(Img)`
   padding-left: 25%;
@@ -148,6 +149,11 @@ const Input = styled.input`
   @media screen and (max-width: 800px) {
     width: 100%;
   }
+  transition: 0.2s;
+  &:hover {
+    width: 210px;
+    box-shadow: 0 0px 30px 0 white;
+}
 `;
 
 const SubmitButton = styled(Button)`
@@ -158,6 +164,12 @@ const SubmitButton = styled(Button)`
   justify-content: center;
   font-family: Montserrat;
   box-shadow: 0 0px 10px 0 white;
+  transition: 0.2s;
+    &:hover {
+        width: 110px;
+        height: 33px;
+        box-shadow: 0 0px 30px 0 white;
+    }
 `;
 
 
@@ -235,6 +247,19 @@ const InfoTextBox = styled.div`
     font-size: 15px;
 `;
 
+const SafeText = styled(FormTitle)`
+    margin-top: -.5em;
+    font-size: 15px;
+    transition: 0.2s;
+    &:hover {
+        color: gray;
+    }
+`;
+
+export const ClearLink = styled(Link) `
+  text-decoration: underline;
+`;
+
 export const AboutPage = () => {
     // Dont Touch --
 
@@ -265,7 +290,7 @@ export const AboutPage = () => {
          xmlhttp.setRequestHeader("Content-Type", "application/json");
          xmlhttp.send(JSON.stringify(data));
          (document.getElementById('myform') as HTMLFormElement).submit();
-         alert("Your request has been submitted! You will recieve your score in your email within the next 24 hours!");
+         alert("Your request has been submitted! You will recieve your score in your email within the next 24 hours! Use your results at your own discretion");
      } 
     // Dont Touch -- 
   return (
@@ -278,7 +303,7 @@ export const AboutPage = () => {
                 whether or not they are prone to depression. Our software uses a multimodal approach integrated with 
                 deep learning and natural language processing to analyze the text in social media posts. Once perfected, 
                 this service will be available to everyone for free — and we will ensure to maintain privacy and secure 
-                boundaries.
+                boundaries. 
             </Subtitle>
             <UpdateLog>
                 <DateText>
@@ -307,9 +332,9 @@ export const AboutPage = () => {
         </AbstractContent>
       </WhiteContainer>
       <IvoryContainer>
-        <BottomHeader>
+        {/* <BottomHeader>
             More Chart Section
-        </BottomHeader>
+        </BottomHeader> */}
       </IvoryContainer>
       <WhiteContainer>
             <BottomHeader>Our Model: DD-1</BottomHeader>
@@ -318,15 +343,14 @@ export const AboutPage = () => {
                     <FormTitle>How to use our model</FormTitle>
                     <InfoTextContainer>
                         <InfoTextBox>
-                            To try out our model, just enter your reddit username, and make sure to exlude 'u/'. Within the next 24 hours, you will recieve an email with your mental wellness score ranging from 0-10.
+                            To try out our model, just enter your reddit username, and make sure to exlude 'u/'. Within the next 24 hours, you will recieve a message with your mental wellness score ranging from 0-10.
                         </InfoTextBox>
                         <InfoTextBox>
-                            When interpreting your score, please note that your score is purely based on conjecture rather than knowledge. Therefore, we cannot provide you with a fully accurate accurate score. 
+                            When interpreting your score, please note that your score is purely based on conjecture rather than knowledge. Therefore, we cannot provide you with a fully accurate score. 
                         </InfoTextBox>
                     </InfoTextContainer>
                 </LeftContent>
                 <MiddleContent>
-                    
                     <HiddenFrame name="dummyframe" id="dummyframe" width="0" height="0"></HiddenFrame>
                     <Form 
                         method="POST"
@@ -338,20 +362,23 @@ export const AboutPage = () => {
                         <FormBox>
                             <FormTitle>Reddit Username:</FormTitle>
                             <Input name="entry.905274474" id="name" type="text" required/>
-                            <FormTitle>Email:</FormTitle>
-                            <Input name="entry.2119216734" id="email" type="email" required/><br/><br/>
+                            <SafeText>
+                                If you would like your Reddit account to be blacklisted from our site, please send us a message 
+                                on our <ClearLink to="/contact-us">contact us</ClearLink> page.
+                            </SafeText>
+                            
                             <SubmitButton type="submit">Submit</SubmitButton>
                         </FormBox>
                     </Form>
                 </MiddleContent>
                 <RightContent>
-                    <FormTitle>What our model does</FormTitle>
+                    <FormTitle>Concerns about Privacy</FormTitle>
                     <InfoTextContainer>
                         <InfoTextBox>
-                            Our model connects to the Reddit API (praw) and pulls publicly available information that is run through our model to output a mental wellness score from 0 (not depressed) to 10 (depressed).
+                            Our site features complete end-to-end encrption. And once you have recieved your score, all of your personal information will be deleted and we will only store the score.
                         </InfoTextBox>
                         <InfoTextBox>
-                            We use a multimodal approach to analyze various aspects of a users' reddit profile. The data used to train our convolutional neural network was labeled by DSM-5 criteria.
+                            We use a multimodal approach to analyze various aspects of a users' reddit profile. The data is completely proccessed by code, and will never be read by humans.
                         </InfoTextBox>
                     </InfoTextContainer>
                 </RightContent>
