@@ -15,6 +15,10 @@ const ImageLeft = styled(Img)`
 padding-left: 0%;
 margin-left: 0%;
 margin-top: 10%;
+transition: 0.2s;
+    &:hover {
+        margin-top: 5%;
+    }
   @media screen and (max-width: 780px) {
       height: 0;
     }
@@ -23,6 +27,10 @@ const ImageMiddle = styled(Img)`
 padding-left: 10%;
 margin-left: 0%;
 margin-top: 10%;
+transition: 0.2s;
+    &:hover {
+        margin-top: 5%;
+    }
   @media screen and (max-width: 780px) {
       height: 0;
     }
@@ -31,6 +39,10 @@ const ImageRight = styled(Img)`
 padding-left: 10%;
 margin-left: 0%;
 margin-top: 10%;
+transition: 0.2s;
+    &:hover {
+        margin-top: 5%;
+    }
   @media screen and (max-width: 780px) {
       height: 0;
     }
