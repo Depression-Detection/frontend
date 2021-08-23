@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="34.48mm"
+   height="64.099998mm"
+   viewBox="0 0 34.48 64.099998"
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
@@ -23,15 +23,19 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.69664703"
-     inkscape:cx="124.8839"
-     inkscape:cy="396.18342"
+     inkscape:zoom="1.9704154"
+     inkscape:cx="39.585562"
+     inkscape:cy="99.97892"
      inkscape:window-width="1920"
      inkscape:window-height="986"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <defs
      id="defs2">
     <filter
@@ -64,10 +68,11 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-86.28031,-114.70145)">
     <g
        id="g120"
-       transform="translate(5.493606,30.003836)">
+       transform="translate(4.0318209,28.761433)">
       <g
          id="g83753"
          transform="translate(-17.372675,71.629028)">
@@ -111,5 +116,6 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer 2" />
+     inkscape:label="Layer 2"
+     transform="translate(-86.28031,-114.70145)" />
 </svg>

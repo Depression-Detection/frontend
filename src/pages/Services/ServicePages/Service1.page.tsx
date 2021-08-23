@@ -13,24 +13,24 @@ const Image = styled(Img)`
 `;
 const ImageLeft = styled(Img)`
 padding-left: 0%;
-margin-left: -13%;
-margin-top: -20%;
+margin-left: 0%;
+margin-top: 10%;
   @media screen and (max-width: 780px) {
       height: 0;
     }
 `;
 const ImageMiddle = styled(Img)`
-padding-left: 0%;
-margin-left: -13%;
-margin-top: -20%;
+padding-left: 10%;
+margin-left: 0%;
+margin-top: 10%;
   @media screen and (max-width: 780px) {
       height: 0;
     }
 `;
 const ImageRight = styled(Img)`
-padding-left: 0%;
-margin-left: -13%;
-margin-top: -20%;
+padding-left: 10%;
+margin-left: 0%;
+margin-top: 10%;
   @media screen and (max-width: 780px) {
       height: 0;
     }
@@ -407,20 +407,20 @@ export const AboutPage = () => {
         <BottomHeader>{'Interpreting Your Score'}</BottomHeader>
         <ImageContainer>
             <ImageLeft
-                height="800"
-                width="800"
+                height="300"
+                width="300"
                 src="/illustrations/GreenPill.svg"
                 alt={('Green Pill')}
             />
             <ImageMiddle
-                height="800"
-                width="800"
+                height="300"
+                width="300"
                 src="/illustrations/OrangePill.svg"
                 alt={('Orange Pill')}
             />
             <ImageRight
-                height="800"
-                width="800"
+                height="300"
+                width="300"
                 src="/illustrations/RedPill.svg"
                 alt={('Red Pill')}
             />
