@@ -11,6 +11,30 @@ const Image = styled(Img)`
         height: 0;
       }
 `;
+const ImageLeft = styled(Img)`
+padding-left: 0%;
+margin-left: -13%;
+margin-top: -20%;
+  @media screen and (max-width: 780px) {
+      height: 0;
+    }
+`;
+const ImageMiddle = styled(Img)`
+padding-left: 0%;
+margin-left: -13%;
+margin-top: -20%;
+  @media screen and (max-width: 780px) {
+      height: 0;
+    }
+`;
+const ImageRight = styled(Img)`
+padding-left: 0%;
+margin-left: -13%;
+margin-top: -20%;
+  @media screen and (max-width: 780px) {
+      height: 0;
+    }
+`;
 
 const Hero = styled(HeroBlack)`
     min-height: 30rem;
@@ -379,6 +403,30 @@ export const AboutPage = () => {
                 </RightContent>
           </ModelContainer>
       </WhiteContainer>
+      <IvoryContainer>
+        <BottomHeader>{'Interpreting Your Score'}</BottomHeader>
+        <ImageContainer>
+            <ImageLeft
+                height="800"
+                width="800"
+                src="/illustrations/GreenPill.svg"
+                alt={('Green Pill')}
+            />
+            <ImageMiddle
+                height="800"
+                width="800"
+                src="/illustrations/OrangePill.svg"
+                alt={('Orange Pill')}
+            />
+            <ImageRight
+                height="800"
+                width="800"
+                src="/illustrations/RedPill.svg"
+                alt={('Red Pill')}
+            />
+        </ImageContainer>
+        
+      </IvoryContainer>
     </PageContainer>
   );
 };
