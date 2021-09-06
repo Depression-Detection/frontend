@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 `;
 
 export const ClearLink = styled(Link) `
+  font-family: IBM Plex Sans Thai Looped;  
   text-decoration: none;
   font-size: .925rem;
 `;
@@ -41,6 +42,7 @@ export const Item = styled.div`
     color: var(--text-secondary);
   }
   tr {
+    font-family: IBM Plex Sans Thai Looped;
     color: var(--text-on-bg);
     border-bottom: 1px solid #ececec;
     font-size: .925rem;

@@ -14,13 +14,12 @@ export const ClearLink = styled(Link) `
   color: white;
   text-decoration: none;
   align-items: center;
-
+  font-family: IBM Plex Sans Thai Looped;
   border: none;
   outline: none;
   background: transparent;
   min-width: 50px;
   justify-content: center;
-  font-family: Trebuchet MS;
   mix-blend-mode: difference;
 `;
 
@@ -110,7 +109,7 @@ export const NavBar: React.FC<NavBarType> = (props) => {
                 alt="Omicron Logo"
               />
             </ClearLink>
-            <ClearLink to="/services" style={{ marginLeft: '2rem' }}>
+            <ClearLink to="/projects" style={{ marginLeft: '2rem' }}>
               Services
             </ClearLink>
             {/* <ClearLink to="/help" style={{ marginLeft: '2rem' }}>
@@ -140,7 +139,7 @@ export const NavBar: React.FC<NavBarType> = (props) => {
               />
           </ClearLink>
           <NavSection>
-            <ClearLink to="/services" style={{ marginLeft: '1rem' }}>
+            <ClearLink to="/projects" style={{ marginLeft: '1rem' }}>
               Services
             </ClearLink>
             {/* <ClearLink to="/help" style={{ marginLeft: '1rem' }}>

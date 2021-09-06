@@ -11,7 +11,7 @@ export const ServicesPage = () => {
       <NavBlock></NavBlock>
       <Content padding>
         <Spacer size="xl" />
-        <Title>{('Our Services')}</Title>
+        <Title>{('Our Projects')}</Title>
         <ItemsContainer>
           <Item>
             <Image
@@ -21,7 +21,7 @@ export const ServicesPage = () => {
               alt={('Mental Health Showcase Image')}
             />
             <tr>{('Mental Health Monitoring on Social Media')}</tr>
-            <ClearLink to="/services/mental-health-monitoring-on-social-media" >View more</ClearLink>
+            <ClearLink to="/projects/mental-health-monitoring-on-social-media" >View more</ClearLink>
           </Item>
           {/* <Item>
             <Image

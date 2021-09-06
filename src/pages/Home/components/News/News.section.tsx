@@ -46,7 +46,7 @@ import React from 'react';
               category={('Get Started')}
               title={('Begin using Omicron')}
               action={('Explore')}
-              to="/services"
+              to="/projects"
             />
             <HomeNewsItem
               category={'Learn More'}

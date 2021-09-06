@@ -49,6 +49,7 @@ export const ItemWrapper = styled.a`
 `;
 
 export const Category = styled.span`
+  font-family: IBM Plex Sans Thai Looped;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 12px;
@@ -56,7 +57,9 @@ export const Category = styled.span`
 `;
 
 export const Title = styled.span`
+  font-family: IBM Plex Sans Thai Looped;
   margin-top: 15px;
+  letter-spacing: 0.01em; 
   font-weight: 600;
   font-size: 20px;
   display: block;
@@ -64,6 +67,7 @@ export const Title = styled.span`
 `;
 
 export const Action = styled.div`
+  font-family: IBM Plex Sans Thai Looped;
   color: white;
   margin-top: 0.5rem;
 `;

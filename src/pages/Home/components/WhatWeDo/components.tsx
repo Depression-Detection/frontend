@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h2`
+  font-family: IBM Plex Sans Thai Looped;
   font-size: 2rem;
   color: white;
   @media screen and (max-width: 800px) {
@@ -22,6 +23,7 @@ export const Title = styled.h2`
 `;
 
 export const SubTitle = styled.a`
+  font-family: IBM Plex Sans Thai Looped;
   color: white;
   @media screen and (max-width: 800px) {
     margin: 0 10px;

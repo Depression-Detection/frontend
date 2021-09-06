@@ -20,7 +20,7 @@ export const BlogPage = () => {
             <TitleLink href="https://medium.com/@life.omicron/the-new-era-of-internet-safety-is-near-heres-how-9c8641aa0d0"  target="_blank">{('Mental Health Monitoring on Social Media')}</TitleLink>
             <Categories>
               <Date>July 17, 2021</Date>
-              <ClearLink to="/blog/research" >Research,</ClearLink>
+              <ClearLink to="/projects/mental-health-monitoring-on-social-media" >Research,</ClearLink>
               <ClearLink to="/blog/announcements" >Announcements,</ClearLink>
               <ClearLink to="/blog/milestones" >Milestones</ClearLink>
             </Categories>

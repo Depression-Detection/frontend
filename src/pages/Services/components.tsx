@@ -10,11 +10,13 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h2`
+  font-family: IBM Plex Sans Thai Looped;
   text-align: center;
   margin-bottom: 3rem;
 `;
 
 export const ClearLink = styled(Link) `
+  font-family: IBM Plex Sans Thai Looped;
   text-decoration: none;
   font-size: .925rem;
 `;
@@ -32,8 +34,7 @@ export const ItemsContainer = styled.div`
 `;
 
 export const Item = styled.div`
-  font-family: Trebuchet MS;
-  
+  font-family: IBM Plex Sans Thai Looped;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -45,6 +46,7 @@ export const Item = styled.div`
     color: var(--text-secondary);
   }
   tr {
+    font-family: IBM Plex Sans Thai Looped;
     color: var(--text-on-bg);
     border-bottom: 1px solid #ececec;
     font-size: .925rem;
@@ -82,6 +84,7 @@ export const PageContainer = styled(Page)`
 export const NavBlock = styled.div`
   background: #151519;
   height: 4.5rem;
+  box-shadow: 0 0px 20px 0 black;
 `;
 
 export {}

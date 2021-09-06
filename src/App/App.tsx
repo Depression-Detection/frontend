@@ -60,13 +60,13 @@ const AppContent = () => {
       <React.Suspense fallback={<PageLoader />}>
       <NavBar />
         <Switch>
-          <Route exact component={ServicesPage} path="/services" />
+          <Route exact component={ServicesPage} path="/projects" />
           <Route exact component={BlogPage} path="/blog" />
           <Route exact component={AboutPage} path="/about" />
           <Route exact component={HomePage} path="/" />
           <Route exact component={ContactPage} path="/contact-us" />
           {/* service pages */}
-          <Route exact component={Service1} path="/services/mental-health-monitoring-on-social-media" />
+          <Route exact component={Service1} path="/projects/mental-health-monitoring-on-social-media" />
           {/* footer pages */}
           <Route exact component={PrivacyPolicy} path="/about/privacy-policy" />
           {/* <Route path="/not-found" component={NotFoundPage} /> */}

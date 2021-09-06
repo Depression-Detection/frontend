@@ -21,6 +21,7 @@ import { LinkOut } from 'src/components/LinkOut';
 import { Img } from 'src/components/Img';
 
 const ClearLink = styled(Link) `
+  font-family: IBM Plex Sans Thai Looped;
   text-decoration: none;
   font-size: .925rem;
 `;
@@ -36,6 +37,7 @@ const Footer = styled.footer`
   // padding-bottom: 5rem;
   color: var(--text-secondary);
   a {
+    font-family: IBM Plex Sans Thai Looped;
     color: #77869e;
     display: block;
     padding: 0.6rem 0;
@@ -117,8 +119,8 @@ export const FooterSection = () => {
       <Content2>
         <SectionContainer>
           <Section>
-            <FSectionTitle>{'Services'}</FSectionTitle>
-            <ClearLink to="/services/mental-health-monitoring-on-social-media">Depression Detection</ClearLink>
+            <FSectionTitle>{'Projects'}</FSectionTitle>
+            <ClearLink to="/projects/mental-health-monitoring-on-social-media">Depression Detection</ClearLink>
           </Section>
           <Section>
             <FSectionTitle>{'Blog'}</FSectionTitle>

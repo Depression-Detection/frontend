@@ -46,7 +46,7 @@ export const HomePage = () => {
       <Hero>
         <Content2 contentCenter style={{ position: 'center', zIndex: 100 }}>
           <Text>{'Omicron'}</Text>
-          <ClearLink to="/services/mental-health-monitoring-on-social-media" >Click here to try out our new DD-1 Depression Detection Model!</ClearLink>
+          <ClearLink to="/projects/mental-health-monitoring-on-social-media" >Click here to try out our new DD-1 Depression Detection Model!</ClearLink>
         </Content2>
         <Spacer />
         {/* <CoinEarnings /> */}

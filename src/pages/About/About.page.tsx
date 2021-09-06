@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom';
 const ClearLink = styled(Link) `
   text-decoration: none;
   font-size: .925rem;
-  font-family: Verdana, serif;
-  font-size: 1em;
+  font-family: IBM Plex Sans Thai Looped;
+  font-size: 1.25em;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: url("https://cdn.openai.com/research-covers/openai-charter/gradient.jpg");
@@ -31,22 +31,22 @@ const Hero = styled(HeroBlack)`
   }
   
   h1 {
-    font-family: Verdana, serif;
+    font-family: IBM Plex Sans Thai Looped;
     font-weight: normal;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: url("https://cdn.openai.com/research-covers/openai-charter/gradient.jpg");
   }
   h3 {
-    font-family: Verdana, serif;
-    font-size: 1.25em;
+    font-family: IBM Plex Sans Thai Looped;
+    font-size: 1.5em;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: url("https://cdn.openai.com/research-covers/openai-charter/gradient.jpg");
   }
   p {
-    font-family: Verdana, serif;
-    font-size: 1em;
+    font-family: IBM Plex Sans Thai Looped;
+    font-size: 1.4em;
     width: 90%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -75,7 +75,7 @@ const WrapperLight = styled.div`
   gap: 2rem;
   
   h2 {
-    font-family: Verdana, serif;
+    font-family: IBM Plex Sans Thai Looped;
     font-weight: normal;
     font-size: 2rem;
     color: #151519;
@@ -86,7 +86,7 @@ const WrapperLight = styled.div`
   }
 
   p {
-    font-family: Verdana, serif;
+    font-family: IBM Plex Sans Thai Looped;
     font-size: 1em;
     width: 100%
   }
