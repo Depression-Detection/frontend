@@ -19,16 +19,16 @@ export const WhyOmicron = () => {
             <tr>{('Mental Health Monitoring on Social Media')}</tr>
             <ClearLink to="/services/mental-health-monitoring-on-social-media" >View more</ClearLink>
           </Item>
-          {/* <Item>
+          <Item>
             <Image
               height="400"
               width="400"
-              src="/illustrations/showcaseimg_1.svg"
+              src="/illustrations/showcaseimg_2.svg"
               alt={('Img 1')}
             />
-            <tr>{('Header 1')}</tr>
-            <a href="https://twitter.com/omicron_life">Click here for Updates</a>
-          </Item> */}
+            <tr>{('Disease Diagnosis on Chest X-Ray')}</tr>
+            <a href="https://twitter.com/omicron_life">View more</a>
+          </Item>
         </ItemsContainer>
         <Spacer size="xl" />
       </Content>
