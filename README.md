@@ -1,6 +1,6 @@
 # Overview
 
-This respository contains the code for the Omicron Life website. Our website is made with a React-Typescript frontend and is hosted on AWS Cloudfront.
+This respository contains the code for the Omicron Life website. Our website is made with Typescript, HTML, and CSS using the React framework and is hosted on AWS Cloudfront. The purpose of the website is to display our depression detection algorithm in a user-friendly manner. The website also addresses the development process, privacy concerns, ways to contribute to our project, and much more.
 
 
 
