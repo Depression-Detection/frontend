@@ -1,3 +1,9 @@
+#Overview
+
+This code is used for the website. Each file here is named with the contents of the file. The website is made via Amazon AWS.
+
+
+
 # Running locally
 
 #### Prerequisites
