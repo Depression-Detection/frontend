@@ -1,6 +1,6 @@
-#Overview
+# Overview
 
-This code is used for the website. Each file here is named with the contents of the file. The website is made via Amazon AWS.
+This respository contains the code for the Omicron Life website. Our website is made with a React-Typescript frontend and is hosted on AWS Cloudfront.
 
 
 
