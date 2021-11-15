@@ -20,6 +20,7 @@ const BlogPage = React.lazy(() => import('../pages/Blog/Blog.page'));
 const AboutPage = React.lazy(() => import('../pages/About/About.page'));
 const ContactPage = React.lazy(() => import('../pages/ContactUs/Contact.page'));
 const Service1 = React.lazy(() => import('../pages/Services/ServicePages/Service1.page'));
+const Service2 = React.lazy(() => import('../pages/Services/ServicePages/Service2.page'));
 const PrivacyPolicy = React.lazy(() => import('../pages/About/PrivacyPolicy.page'));
 
 const AppContent = () => {
@@ -67,6 +68,7 @@ const AppContent = () => {
           <Route exact component={ContactPage} path="/contact-us" />
           {/* service pages */}
           <Route exact component={Service1} path="/projects/mental-health-monitoring-on-social-media" />
+          <Route exact component={Service2} path="/projects/disease-diagnosis-on-chest-x-rays" />
           {/* footer pages */}
           <Route exact component={PrivacyPolicy} path="/about/privacy-policy" />
           {/* <Route path="/not-found" component={NotFoundPage} /> */}

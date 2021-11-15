@@ -297,51 +297,20 @@ export const ClearLink = styled(Link) `
 `;
 
 export const AboutPage = () => {
-    // Dont Touch --
-
-    function submitToAPI(e) {
-        e.preventDefault();
-        var URL = "https://fvxw67h6bl.execute-api.us-east-1.amazonaws.com/default/GetData";
-        
-        let name = (document.getElementById("name") as HTMLInputElement).value;
-
-        if (name=="")
-         {
-            alert("Please fill all required fields");
-            return false;
-         }
-         
-        const emailRE = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-        var data = {
-           name : name
-         };
-         var xmlhttp = new XMLHttpRequest();
-         xmlhttp.open("POST", URL);
-         xmlhttp.setRequestHeader("Content-Type", "application/json");
-         xmlhttp.send(JSON.stringify(data));
-         (document.getElementById('myform') as HTMLFormElement).submit();
-         alert("Your request has been submitted! You will recieve your score in a direct message to your Reddit account within the next 24 hours! Use your results at your own discretion");
-     } 
-    // Dont Touch -- 
   return (
     <PageContainer>
       <Hero>
         <TextContainer>
-            <Title>{'Mental Health Monitoring on Social Media'}</Title>
+            <Title>{'Disease Diagnosis on Chest X-Rays'}</Title>
             <Subtitle>
-                We've created a software that can scan the intricacies of users' social media accounts to determine 
-                whether or not they are prone to depression. Our software uses a multimodal approach integrated with 
-                deep learning and natural language processing to analyze the text in social media posts. Once perfected, 
-                this service will be available to everyone for free — and we will ensure to maintain privacy and secure 
-                boundaries. 
+                X-rays are one of the most vital chest examinations available. However, it may be difficult and time consuming for humans to perform clinical diagnosis of them. So we've developed a model that is able to scan chest x-rays and determine if they show signs of pulmonary diseases.
             </Subtitle>
             <UpdateLog>
                 <DateText>
                     Last Updated
                 </DateText>
                 <DateText>
-                    October 21, 2021
+                    November 15, 2021
                 </DateText>
             </UpdateLog>
         </TextContainer>
@@ -349,7 +318,7 @@ export const AboutPage = () => {
             <Image
                 height="400"
                 width="400"
-                src="/illustrations/showcaseimg_1.svg"
+                src="/illustrations/showcaseimg_2.svg"
                 alt={('Mental Health Showcase Image')}
             />
         </ImageContainer>
@@ -363,82 +332,8 @@ export const AboutPage = () => {
         </AbstractContent>
       </WhiteContainer>
       <IvoryContainer>
-        {/* <BottomHeader>
-            More Chart Section
-        </BottomHeader> */}
+        <BottomHeader>Try Out Our Model: CXD-1</BottomHeader>
       </IvoryContainer>
-      <WhiteContainer>
-            <BottomHeader>Our Model: DD-1</BottomHeader>
-            <ModelContainer>
-                <LeftContent>
-                    <FormTitle>How to use our model</FormTitle>
-                    <InfoTextContainer>
-                        <InfoTextBox>
-                            To try out our model, just enter your reddit username, and make sure to exlude 'u/'. Within the next 24 hours, you will recieve a message with your mental wellness score ranging from 0-10.
-                        </InfoTextBox>
-                        <InfoTextBox>
-                            When interpreting your score, please note that your score is purely based on conjecture rather than knowledge. Therefore, we cannot provide you with a fully accurate score. 
-                        </InfoTextBox>
-                    </InfoTextContainer>
-                </LeftContent>
-                <MiddleContent>
-                    <HiddenFrame name="dummyframe" id="dummyframe" width="0" height="0"></HiddenFrame>
-                    <Form 
-                        method="POST"
-                        action="https://docs.google.com/forms/d/e/1FAIpQLSed3iw5Lew8E2Tf7p-CLR96kXLGgpf46fuhQ4mzEp9DfZjckQ/formResponse"
-                        target="dummyframe"
-                        id="myform"
-                        onSubmit={submitToAPI}
-                    >
-                        <FormBox>
-                            <FormTitle>Reddit Username:</FormTitle>
-                            <Input name="entry.905274474" id="name" type="text" required/>
-                            <SafeText>
-                                If you would like your Reddit account to be blacklisted from our site, please send us a message 
-                                on our <ClearLink to="/contact-us">contact us</ClearLink> page.
-                            </SafeText>
-                            
-                            <SubmitButton type="submit">Submit</SubmitButton>
-                        </FormBox>
-                    </Form>
-                </MiddleContent>
-                <RightContent>
-                    <FormTitle>Concerns about Privacy</FormTitle>
-                    <InfoTextContainer>
-                        <InfoTextBox>
-                            Our site features complete end-to-end encryption. And once you have recieved your score, all of your personal information will be deleted and we will only store the score.
-                        </InfoTextBox>
-                        <InfoTextBox>
-                            We use a multimodal approach to analyze various aspects of a users' Reddit profile. The data is completely proccessed by code, and will never be read by humans.
-                        </InfoTextBox>
-                    </InfoTextContainer>
-                </RightContent>
-          </ModelContainer>
-      </WhiteContainer>
-      {/* <IvoryContainer>
-        <BottomHeader>{'Interpreting Your Score'}</BottomHeader>
-        <ImageContainer>
-            <ImageLeft
-                height="300"
-                width="300"
-                src="/illustrations/GreenPill.svg"
-                alt={('Green Pill')}
-            />
-            <ImageMiddle
-                height="300"
-                width="300"
-                src="/illustrations/OrangePill.svg"
-                alt={('Orange Pill')}
-            />
-            <ImageRight
-                height="300"
-                width="300"
-                src="/illustrations/RedPill.svg"
-                alt={('Red Pill')}
-            />
-        </ImageContainer>
-        
-      </IvoryContainer> */}
     </PageContainer>
   );
 };

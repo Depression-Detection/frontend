@@ -17,7 +17,7 @@ export const WhyOmicron = () => {
               alt={('Mental Health Showcase Image')}
             />
             <tr>{('Mental Health Monitoring on Social Media')}</tr>
-            <ClearLink to="/services/mental-health-monitoring-on-social-media" >View more</ClearLink>
+            <ClearLink to="/projects/mental-health-monitoring-on-social-media" >View more</ClearLink>
           </Item>
           <Item>
             <Image
@@ -26,8 +26,8 @@ export const WhyOmicron = () => {
               src="/illustrations/showcaseimg_2.svg"
               alt={('Img 1')}
             />
-            <tr>{('Disease Diagnosis on Chest X-Ray')}</tr>
-            <a href="https://twitter.com/omicron_life">View more</a>
+            <tr>{('Disease Diagnosis on Chest X-Rays')}</tr>
+            <ClearLink to="/projects/disease-diagnosis-on-chest-x-rays" >View more</ClearLink>
           </Item>
         </ItemsContainer>
         <Spacer size="xl" />
